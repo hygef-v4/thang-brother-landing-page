@@ -195,7 +195,8 @@ export default function Home() {
         </section>
 
         {/* STORY: The Dossier */}
-        <section id="dossier" className="section-divide max-w-6xl mx-auto overflow-hidden">
+        <section id="dossier" className="section-divide bg-paper-dark -mx-4 px-4 md:-mx-6 md:px-6 max-w-none">
+            <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16">
               <RevealOnScroll direction="left" delay={0.2}>
                 <div>
@@ -236,6 +237,7 @@ export default function Home() {
                 </div>
               </RevealOnScroll>
             </div>
+            </div>
         </section>
 
         <section id="mystery" className="section-divide max-w-4xl mx-auto text-center">
@@ -271,8 +273,8 @@ export default function Home() {
         </section>
 
         {/* CHARACTERS: Personnel Files */}
-        <section id="characters" className="section-divide max-w-6xl mx-auto">
-        <section id="characters" className="section-divide max-w-6xl mx-auto">
+        <section id="characters" className="section-divide bg-paper-dark -mx-4 px-4 md:-mx-6 md:px-6 max-w-none">
+          <div className="max-w-6xl mx-auto">
             <RevealOnScroll direction="up">
               <h2 className="editorial-title mb-16"><ColorfulTitle>Hồ Sơ Nhân Vật.</ColorfulTitle></h2>
             </RevealOnScroll>
@@ -333,11 +335,10 @@ export default function Home() {
                 </RevealOnScroll>
               ))}
             </div>
-        </section>
+          </div>
         </section>
 
         {/* GALLERY PLACEHOLDERS */}
-        <section id="gallery" className="section-divide max-w-6xl mx-auto">
         <section id="gallery" className="section-divide max-w-6xl mx-auto">
              <RevealOnScroll direction="up">
                 <h2 className="editorial-title mb-12"><ColorfulTitle>Tư Liệu Hình Ảnh.</ColorfulTitle></h2>
@@ -361,11 +362,10 @@ export default function Home() {
                 ))}
              </div>
         </section>
-        </section>
 
         {/* TIMELINE: The Path */}
-        <section className="section-divide max-w-4xl mx-auto text-center">
-        <section className="section-divide max-w-4xl mx-auto text-center">
+        <section className="section-divide bg-paper-dark -mx-4 px-4 md:-mx-6 md:px-6 max-w-none">
+          <div className="max-w-4xl mx-auto text-center">
             <RevealOnScroll direction="up">
               <h2 className="editorial-title mb-8"><ColorfulTitle>15 Ngày Định Mệnh.</ColorfulTitle></h2>
               <p className="editorial-text mx-auto mb-16">
@@ -414,7 +414,7 @@ export default function Home() {
                 </RevealOnScroll>
               ))}
             </div>
-        </section>
+          </div>
         </section>
 
         {/* FOOTER */}

@@ -353,41 +353,45 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="border-t border-line bg-paper pt-12 pb-12 mt-12 relative overflow-hidden">
+        <footer className="border-t border-line bg-paper pt-8 pb-6 mt-12 relative overflow-hidden">
           {/* Decorative Background */}
           <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-black/5 rounded-full blur-3xl rounded-bl-full pointer-events-none"></div>
 
           <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
             
             {/* Main Links */}
-            <div className="flex flex-wrap justify-center gap-8 mb-12 text-sm text-ink-light font-medium uppercase tracking-wider">
-               <a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a>
-               <a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a>
-               <a href="#mystery" className="hover:text-black transition-colors">Bí Ẩn</a>
-               <a href="https://hygef-v4.itch.io/brother-thang-philosophy-club" target="_blank" className="hover:text-black transition-colors">Tải Game</a>
-            </div>
+            <RevealOnScroll direction="up" delay={0.1}>
+              <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm text-ink-light font-medium uppercase tracking-wider">
+                 <a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a>
+                 <a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a>
+                 <a href="#mystery" className="hover:text-black transition-colors">Bí Ẩn</a>
+                 <a href="https://hygef-v4.itch.io/brother-thang-philosophy-club" target="_blank" className="hover:text-black transition-colors">Tải Game</a>
+              </div>
+            </RevealOnScroll>
 
             {/* Brand/Signature Area */}
-            <div className="flex flex-col items-center gap-6">
-                <div className="w-40 h-40 relative opacity-90 transition-transform hover:scale-105 duration-500">
-                    <Image src="/images/kumo.png" alt="Kumo Studio" fill className="object-contain" />
-                </div>
-                
-                <div className="space-y-2">
-                   <h3 className="font-serif font-bold text-lg">CLB Triết Học</h3>
-                   <p className="text-xs text-ink-light mx-auto max-w-sm">
-                     "Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói."
-                   </p>
-                </div>
+            <RevealOnScroll direction="scale" delay={0.2} duration={0.8}>
+              <div className="flex flex-col items-center gap-4">
+                  <div className="w-24 h-24 relative opacity-90 transition-transform hover:scale-105 duration-500">
+                      <Image src="/images/kumo.png" alt="Kumo Studio" fill className="object-contain" />
+                  </div>
+                  
+                  <div className="space-y-1">
+                     <h3 className="font-serif font-bold text-base">CLB Triết Học</h3>
+                     <p className="text-xs text-ink-light mx-auto max-w-md leading-relaxed">
+                       "Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói."
+                     </p>
+                  </div>
 
-                <div className="flex items-center gap-6 mt-4 text-xs font-mono text-ink-light/60 uppercase">
-                    <span>© 2026 Kumo Studio</span>
-                    <span>•</span>
-                    <span className="cursor-pointer hover:text-black">Privacy</span>
-                    <span>•</span>
-                    <span className="cursor-pointer hover:text-black">Terms</span>
-                </div>
-            </div>
+                  <div className="flex items-center gap-4 mt-2 text-xs font-mono text-ink-light/60 uppercase">
+                      <span>© 2026 Kumo Studio</span>
+                      <span>•</span>
+                      <span className="cursor-pointer hover:text-black transition-colors">Privacy</span>
+                      <span>•</span>
+                      <span className="cursor-pointer hover:text-black transition-colors">Terms</span>
+                  </div>
+              </div>
+            </RevealOnScroll>
           </div>
         </footer>
       </main>

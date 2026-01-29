@@ -3,6 +3,72 @@
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Brain, Clock, Download, FileText, User, Users, Play, HelpCircle, Image as ImageIcon } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
+
+// Colorful hover effect for titles (like Coolors.co)
+const ColorfulTitle = ({ children, className = "" }: { children: string, className?: string }) => {
+  // Generate infinite beautiful colors using HSL
+  // High saturation (60-90%) and medium-dark lightness (30-50%) for readability on white
+  const getRandomColor = () => {
+    const hue = Math.floor(Math.random() * 360);
+    const saturation = Math.floor(Math.random() * 30) + 60; // 60-90%
+    const lightness = Math.floor(Math.random() * 20) + 35; // 35-55%
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  };
+  
+  const letters = children.split('');
+  
+  return (
+    <span className={`inline-block ${className}`}>
+      {letters.map((letter, i) => {
+        const LetterWithHover = () => {
+          const [hoverColor, setHoverColor] = useState<string | null>(null);
+          const [shouldFade, setShouldFade] = useState(false);
+          
+          return (
+            <motion.span
+              className="inline-block cursor-pointer"
+              initial={{ color: 'inherit' }}
+              animate={{ 
+                color: shouldFade ? 'inherit' : (hoverColor || 'inherit'),
+                scale: hoverColor && !shouldFade ? 1.1 : 1,
+                textShadow: hoverColor && !shouldFade ? '1px 1px 2px rgba(0,0,0,0.1)' : 'none'
+              }}
+              transition={{
+                color: { 
+                  duration: shouldFade ? 2.5 : 0.3,
+                  ease: shouldFade ? [0.4, 0.0, 0.2, 1] : [0.25, 0.1, 0.25, 1]
+                },
+                scale: { 
+                  duration: 0.3,
+                  ease: [0.34, 1.56, 0.64, 1]
+                },
+                textShadow: { duration: 0.3 }
+              }}
+              onMouseEnter={() => {
+                const color = getRandomColor();
+                setHoverColor(color);
+                setShouldFade(false);
+                
+                setTimeout(() => {
+                  setShouldFade(true);
+                  setTimeout(() => {
+                    setHoverColor(null);
+                    setShouldFade(false);
+                  }, 2000);
+                }, 3000);
+              }}
+            >
+              {letter === ' ' ? '\u00A0' : letter}
+            </motion.span>
+          );
+        };
+        
+        return <LetterWithHover key={i} />;
+      })}
+    </span>
+  );
+};
 
 // Reusable Reveal Component
 const RevealOnScroll = ({ 
@@ -102,8 +168,7 @@ export default function Home() {
             </div>
             
             <h1 className="editorial-title mb-4 md:mb-6 max-w-4xl leading-tight text-4xl md:text-5xl lg:text-6xl">
-                Thoát Khỏi <br />
-                <span className="italic font-normal text-ink-light">Cái Hang.</span>
+                <ColorfulTitle>Thoát Khỏi Cái Hang.</ColorfulTitle>
               </h1>
             
             <div className="grid md:grid-cols-[1fr_2fr] gap-12 items-start mt-12">
@@ -134,7 +199,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 md:gap-16">
               <RevealOnScroll direction="left" delay={0.2}>
                 <div>
-                  <h2 className="editorial-title">Vụ Việc.</h2>
+                  <h2 className="editorial-title"><ColorfulTitle>Vụ Việc.</ColorfulTitle></h2>
                   <p className="editorial-text mb-6">
                     Chuyện gì xảy ra khi một thanh niên Gen Z bị kẹt giữa áp lực gia đình và những tư tưởng triết học quái đản?
                   </p>
@@ -181,7 +246,7 @@ export default function Home() {
              </RevealOnScroll>
              
              <RevealOnScroll direction="down" delay={0.2}>
-                <h2 className="editorial-title mb-8">Những Bí Ẩn Bỏ Ngỏ.</h2>
+              <h2 className="editorial-title mb-8"><ColorfulTitle>Những Bí Ẩn Bỏ Ngỏ.</ColorfulTitle></h2>
                 <p className="editorial-text mx-auto mb-12">
                   Tại sao bố Thắng lại căm ghét Triết học đến vậy? 
                   Liệu Xỉu có thực sự là một "dân chơi" hay đang che giấu một quá khứ đen tối? 
@@ -209,7 +274,7 @@ export default function Home() {
         <section id="characters" className="section-divide max-w-6xl mx-auto">
         <section id="characters" className="section-divide max-w-6xl mx-auto">
             <RevealOnScroll direction="up">
-              <h2 className="editorial-title mb-16">Hồ Sơ Nhân Vật.</h2>
+              <h2 className="editorial-title mb-16"><ColorfulTitle>Hồ Sơ Nhân Vật.</ColorfulTitle></h2>
             </RevealOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
@@ -275,7 +340,7 @@ export default function Home() {
         <section id="gallery" className="section-divide max-w-6xl mx-auto">
         <section id="gallery" className="section-divide max-w-6xl mx-auto">
              <RevealOnScroll direction="up">
-                <h2 className="editorial-title mb-12">Tư Liệu Hình Ảnh.</h2>
+                <h2 className="editorial-title mb-12"><ColorfulTitle>Tư Liệu Hình Ảnh.</ColorfulTitle></h2>
              </RevealOnScroll>
              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
                 <RevealOnScroll delay={0.1} direction="scale" className="md:col-span-2 md:row-span-2 h-full">
@@ -302,7 +367,7 @@ export default function Home() {
         <section className="section-divide max-w-4xl mx-auto text-center">
         <section className="section-divide max-w-4xl mx-auto text-center">
             <RevealOnScroll direction="up">
-              <h2 className="editorial-title">Lộ Trình Nhận Thức.</h2>
+              <h2 className="editorial-title mb-8"><ColorfulTitle>15 Ngày Định Mệnh.</ColorfulTitle></h2>
               <p className="editorial-text mx-auto mb-16">
                 Hành trình từ bóng tối ra ánh sáng (hoặc ngược lại).
               </p>

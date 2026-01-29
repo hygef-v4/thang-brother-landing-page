@@ -418,7 +418,7 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="border-t border-line bg-paper pt-8 pb-6 mt-12 relative overflow-hidden">
+        <footer className="border-t border-line pt-8 pb-6 mt-12 relative overflow-hidden">
           {/* Decorative Background */}
           <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-black/5 rounded-full blur-3xl rounded-bl-full pointer-events-none"></div>
 

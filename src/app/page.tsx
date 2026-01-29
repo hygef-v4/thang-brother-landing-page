@@ -339,73 +339,40 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="border-t border-line bg-paper pt-8 pb-4 mt-12 relative overflow-hidden">
+        <footer className="border-t border-line bg-paper pt-12 pb-12 mt-12 relative overflow-hidden">
           {/* Decorative Background */}
           <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-black/5 rounded-full blur-3xl rounded-bl-full pointer-events-none"></div>
 
-          <div className="max-w-6xl mx-auto px-6 relative z-10">
-            <div className="grid md:grid-cols-4 gap-8 mb-4">
-              {/* Brand Column */}
-              <div className="md:col-span-1">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-6 h-6 relative grayscale opacity-80">
-                    <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
-                  </div>
-                  <h3 className="font-serif font-bold text-lg">CLB Triết Học</h3>
-                </div>
-                <p className="text-xs text-ink-light leading-relaxed mb-4">
-                  Một dự án Visual Novel độc lập về Triết học, Tuổi trẻ và những lựa chọn sai lầm.
-                </p>
-                <div className="flex gap-4 opacity-60">
-                  <a href="#" className="hover:text-accent transition-colors"><div className="w-5 h-5 bg-black/10 rounded-full"></div></a>
-                  <a href="#" className="hover:text-accent transition-colors"><div className="w-5 h-5 bg-black/10 rounded-full"></div></a>
-                  <a href="#" className="hover:text-accent transition-colors"><div className="w-5 h-5 bg-black/10 rounded-full"></div></a>
-                </div>
-              </div>
-
-              {/* Navigation */}
-              <div>
-                <h4 className="font-bold text-sm mb-3 uppercase tracking-wider">Hồ Sơ</h4>
-                <ul className="space-y-1 text-sm text-ink-light">
-                  <li><a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a></li>
-                  <li><a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a></li>
-                  <li><a href="#mystery" className="hover:text-black transition-colors">Bí Ẩn</a></li>
-                  <li><a href="https://hygef-v4.itch.io/brother-thang-philosophy-club" target="_blank" className="hover:text-black transition-colors">Tải Game</a></li>
-                </ul>
-              </div>
-
-              {/* Contact */}
-              <div>
-                <h4 className="font-bold text-sm mb-3 uppercase tracking-wider">Liên Hệ</h4>
-                <ul className="space-y-1 text-sm text-ink-light">
-                  <li>Đại học FPT Hanoi</li>
-                  <li className="pt-2 text-xs italic opacity-70">"Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói."</li>
-                </ul>
-              </div>
-
-              {/* Newsletter */}
-              <div>
-                 <h4 className="font-bold text-sm mb-3 uppercase tracking-wider">Nhận Tin Mật</h4>
-                 <p className="text-xs text-ink-light mb-2">Nhận thông báo khi có manh mối mới.</p>
-                 <div className="flex border-b border-black py-1">
-                    <input type="email" placeholder="Email của bạn..." className="bg-transparent outline-none w-full text-sm font-mono placeholder:text-black/30 text-black" />
-                    <button className="text-xs font-bold uppercase hover:text-accent transition-colors">Gửi</button>
-                 </div>
-              </div>
+          <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            
+            {/* Main Links */}
+            <div className="flex flex-wrap justify-center gap-8 mb-12 text-sm text-ink-light font-medium uppercase tracking-wider">
+               <a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a>
+               <a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a>
+               <a href="#mystery" className="hover:text-black transition-colors">Bí Ẩn</a>
+               <a href="https://hygef-v4.itch.io/brother-thang-philosophy-club" target="_blank" className="hover:text-black transition-colors">Tải Game</a>
             </div>
 
-            {/* Bottom Bar */}
-            <div className="border-t border-line/50 pt-3 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-ink-light uppercase">
-              <div className="flex flex-col items-center gap-2">
-                 <div className="w-32 h-32 relative opacity-90">
+            {/* Brand/Signature Area */}
+            <div className="flex flex-col items-center gap-6">
+                <div className="w-40 h-40 relative opacity-90 transition-transform hover:scale-105 duration-500">
                     <Image src="/images/kumo.png" alt="Kumo Studio" fill className="object-contain" />
-                 </div>
-                 <p>© 2026 Kumo Studio. All Rights Reserved.</p>
-              </div>
-              <div className="flex gap-6">
-                <span>Privacy Policy</span>
-                <span>Terms of Service</span>
-              </div>
+                </div>
+                
+                <div className="space-y-2">
+                   <h3 className="font-serif font-bold text-lg">CLB Triết Học</h3>
+                   <p className="text-xs text-ink-light mx-auto max-w-sm">
+                     "Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói."
+                   </p>
+                </div>
+
+                <div className="flex items-center gap-6 mt-4 text-xs font-mono text-ink-light/60 uppercase">
+                    <span>© 2026 Kumo Studio</span>
+                    <span>•</span>
+                    <span className="cursor-pointer hover:text-black">Privacy</span>
+                    <span>•</span>
+                    <span className="cursor-pointer hover:text-black">Terms</span>
+                </div>
             </div>
           </div>
         </footer>

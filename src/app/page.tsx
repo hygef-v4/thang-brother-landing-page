@@ -372,7 +372,7 @@ export default function Home() {
             {/* Brand/Signature Area */}
             <RevealOnScroll direction="scale" delay={0.2} duration={0.8}>
               <div className="flex flex-col items-center gap-4">
-                  <div className="w-24 h-24 relative opacity-90 transition-transform hover:scale-105 duration-500">
+                  <div className="w-32 h-32 relative opacity-90 transition-transform hover:scale-105 duration-500">
                       <Image src="/images/kumo.png" alt="Kumo Studio" fill className="object-contain" />
                   </div>
                   

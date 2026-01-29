@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "CLB Triết Học Anh Thắng | Brother Thang's Philosophy Club",
   description: "Giúp Thắng thoát khỏi áp lực gia đình bằng Triết học trong 15 ngày! Visual Novel đậm chất VN.",
   icons: {
-    icon: '/images/logo.png',
+    icon: '/images/kumo.png',
   },
 };
 

@@ -3,12 +3,12 @@
 
 :root {
   /* Paper & Ink Palette */
-  --paper: #F5F1E6;      /* Light Beige / Vintage Paper */
+  --paper: #FAFAFA;      /* Near-white / Clean Paper */
   --paper-dark: rgba(28, 25, 23, 0.05); /* Transparent black (5%) to darken texture */
   --ink: #1c1917;        /* Soft black */
   --ink-light: #57534e;  /* Dark gray */
   --accent: #C62828;     /* Deep Red for danger/alert */
-  --line: #d6d3c8;       /* Subtle border, slightly darker to match paper */
+  --line: #e5e5e5;       /* Subtle border, adjusted for lighter background */
 }
 
 /* Tailwind CSS v4 theme configuration */

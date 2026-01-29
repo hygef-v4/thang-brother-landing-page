@@ -121,14 +121,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-paper text-ink selection:bg-accent selection:text-white relative z-10">
       {/* Header Minimalist */}
-      <nav className="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-sm border-b border-line relative">
+      <nav className="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-sm border-b border-line">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
             <div className="w-8 h-8 relative">
                <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
             </div>
             <span className="font-serif font-bold text-xl">CLB Triết Học Anh Thắng</span>
-          </div>
+          </a>
           <div className="hidden md:flex gap-6 text-sm font-medium text-ink-light">
             <a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a>
             <a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a>

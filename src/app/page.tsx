@@ -119,9 +119,9 @@ const RevealOnScroll = ({
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-paper text-ink selection:bg-accent selection:text-white">
+    <div className="min-h-screen bg-paper text-ink selection:bg-accent selection:text-white relative z-10">
       {/* Header Minimalist */}
-      <nav className="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-sm border-b border-line">
+      <nav className="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-sm border-b border-line relative">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 relative">

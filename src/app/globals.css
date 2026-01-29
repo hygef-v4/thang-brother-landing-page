@@ -31,15 +31,23 @@ html {
 
 body {
   background-color: var(--paper);
-  background-image: url('/images/cream-paper.png');
-  background-repeat: repeat;
+  position: relative;
   color: var(--ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Removed global noise overlay in favor of real image/texture */
+/* Paper Texture Overlay - Safe approach that doesn't affect text */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('/images/cream-paper.png');
+  opacity: 0.08; /* Low opacity to avoid affecting readability */
+  pointer-events: none;
+  z-index: 0;
+}
 
 @layer utilities {
   .font-serif {

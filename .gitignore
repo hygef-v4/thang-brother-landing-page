@@ -21,8 +21,16 @@
 /build
 
 # misc
+
+# misc
+
+# misc
 .DS_Store
 *.pem
+Thumbs.db
+.vscode/
+Thumbs.db
+.vscode/
 
 # debug
 npm-debug.log*

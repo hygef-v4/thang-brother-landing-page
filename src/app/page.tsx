@@ -1,64 +1,284 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight, BookOpen, Brain, Clock, Download, FileText, User, Users, Play, HelpCircle, Image as ImageIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="min-h-screen bg-paper text-ink selection:bg-accent selection:text-white">
+      {/* Header Minimalist */}
+      <nav className="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-sm border-b border-line">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 relative">
+               <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
+            </div>
+            <span className="font-serif font-bold text-xl">CLB Triết Học Anh Thắng</span>
+          </div>
+          <div className="hidden md:flex gap-6 text-sm font-medium text-ink-light">
+            <a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a>
+            <a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a>
+            <a href="#mystery" className="hover:text-black transition-colors">Bí Ẩn</a>
+          </div>
+          <div className="flex gap-3">
+             <a 
+              href="https://hygef-v4.itch.io/brother-thang-philosophy-club"
+              target="_blank"
+              className="flex items-center gap-2 px-4 py-2 bg-paper border border-black text-black text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <Play size={14} /> Chơi Online
+            </a>
+            <a 
+              href="https://hygef-v4.itch.io/brother-thang-philosophy-club"
+              target="_blank"
+              className="hidden sm:flex px-4 py-2 bg-black text-white text-xs font-bold uppercase tracking-wider hover:bg-accent hover:border-accent transition-colors"
             >
-              Learning
-            </a>{" "}
-            center.
+              Tải Demo
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <main className="pt-32 pb-20 px-6">
+        
+        {/* HERO: Editorial Cover */}
+        <section className="max-w-6xl mx-auto mb-32 md:mb-48">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-12 bg-black"></span>
+              <span className="font-mono text-xs uppercase tracking-widest text-ink-light">Visual Novel • Trinh Thám • Triết Học</span>
+            </div>
+            
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter mb-8">
+              Thoát Khỏi <br/>
+              <span className="italic text-ink-light">Cái Hang.</span>
+            </h1>
+            
+            <div className="grid md:grid-cols-[1fr_2fr] gap-12 items-start mt-12">
+              <div className="text-sm font-mono text-ink-light border-t border-black pt-4">
+                <p>FILE: #001-THANG</p>
+                <p>STATUS: NGUY CẤP</p>
+                <p>THỜI HẠN: 15 NGÀY</p>
+              </div>
+              
+              <div>
+                <p className="editorial-text mb-8">
+                  Bạn là <strong className="text-black">Thắng</strong>. Một tân sinh viên trượt nguyện vọng 1. 
+                  Một ông bố Đại tá muốn tống bạn vào quân đội. 
+                  Và <strong className="bg-black text-white px-1">15 ngày</strong> cuối cùng để chứng minh: Triết học có thể cứu rỗi cuộc đời bạn (hoặc phá hủy nó).
+                </p>
+                <div className="flex gap-4">
+                  <a href="#dossier" className="group flex items-center gap-2 border-b border-black pb-1 hover:text-accent hover:border-accent transition-colors">
+                    Xem Hồ Sơ Vụ Việc <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* STORY: The Dossier */}
+        <section id="dossier" className="section-divide max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="editorial-title">Vụ Việc.</h2>
+              <p className="editorial-text mb-6">
+                Chuyện gì xảy ra khi một thanh niên Gen Z bị kẹt giữa áp lực gia đình và những tư tưởng triết học quái đản?
+              </p>
+              <ul className="space-y-4 font-mono text-sm text-ink-light mt-8">
+                <li className="flex gap-4 items-start">
+                  <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">1</span>
+                  <p>Trượt đại học. Bị bố (Đại tá Quân đội) dọa bắt đi nghĩa vụ quân sự.</p>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">2</span>
+                  <p>Tham gia CLB Triết Học để "lấy le" nhưng lại bị cuốn vào những cuộc tranh luận sinh tử.</p>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">3</span>
+                  <p>Đối mặt với các luồng tư tưởng: Chủ nghĩa Khoái lạc (Xỉu) vs Chủ nghĩa Khắc kỷ (Hải Nữ).</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="relative">
+               {/* Embed Placeholder */}
+              <div className="aspect-[16/9] bg-gray-100 border border-line flex items-center justify-center relative shadow-lg">
+                  <iframe 
+                    src="https://itch.io/embed/4237431?linkback=true&bg_color=fafaf9&fg_color=1c1917&link_color=000000&border_color=e7e5e4" 
+                    width="100%" 
+                    height="100%" 
+                    frameBorder="0"
+                    className="w-full h-full"
+                  />
+              </div>
+              <p className="font-mono text-xs text-center mt-2 text-ink-light">BẰNG CHỨNG #01: GAMEPLAY FOOTAGE</p>
+            </div>
+          </div>
+        </section>
+
+        {/* MYSTERY SECTION */}
+        <section id="mystery" className="section-divide max-w-4xl mx-auto text-center">
+           <div className="inline-flex items-center justify-center p-3 rounded-full bg-accent/10 text-accent mb-6">
+             <HelpCircle size={32} />
+           </div>
+           <h2 className="editorial-title mb-8">Những Bí Ẩn Bỏ Ngỏ.</h2>
+           <p className="editorial-text mx-auto mb-12">
+             Tại sao bố Thắng lại căm ghét Triết học đến vậy? 
+             Liệu Xỉu có thực sự là một "dân chơi" hay đang che giấu một quá khứ đen tối? 
+             Và quan trọng nhất... ai là người điều khiển thực tại này?
+           </p>
+           <div className="grid md:grid-cols-3 gap-6 text-left">
+              {[
+                "Căn phòng bí mật của Bố.",
+                "Cuốn nhật ký của Xỉu.",
+                "Thí nghiệm 'Cái Hang' của Nữ."
+              ].map((item, i) => (
+                <div key={i} className="bg-white p-6 border border-line shadow-sm">
+                   <span className="block font-mono text-xs text-accent mb-2">FILE #{i+10}</span>
+                   <p className="font-medium">{item}</p>
+                </div>
+              ))}
+           </div>
+        </section>
+
+        {/* CHARACTERS: Personnel Files */}
+        <section id="characters" className="section-divide max-w-6xl mx-auto">
+          <h2 className="editorial-title mb-16">Hồ Sơ Nhân Vật.</h2>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                id: "NV-01",
+                name: "Võ Minh Xỉu",
+                role: "The Hedonist (Khoái Lạc)",
+                desc: "Dân chơi, thích cá cược. Quá khứ bí ẩn tại Campuchia. Luôn tin rằng 'Vui là chính'.",
+                icon: <Download size={24} />
+              },
+              {
+                id: "NV-02",
+                name: "Vũ Hải Nữ",
+                role: "The Idealist (Lý Tưởng)",
+                desc: "Hội trưởng CLB. Nghiêm túc, ám ảnh với 'Cái Hang Plato'. Muốn tìm ra Chân lý tuyệt đối.",
+                icon: <BookOpen size={24} />
+              },
+              {
+                id: "NV-03",
+                name: "Đại Tá Hưng",
+                role: "The Authority (Quyền Lực)",
+                desc: "Bố của Thắng. Tin vào Kỷ luật thép. 'Quân đội sẽ dạy mày làm người'.",
+                icon: <User size={24} />
+              }
+            ].map((char, i) => (
+              <div key={i} className="dossier-card group">
+                <div className="flex justify-between items-start mb-6 border-b border-line pb-4">
+                  <span className="font-mono text-xs text-accent">{char.id}</span>
+                  {char.icon}
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{char.name}</h3>
+                <p className="font-mono text-xs uppercase tracking-wider text-ink-light mb-4">{char.role}</p>
+                <p className="text-sm leading-relaxed text-ink-light">
+                  {char.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* GALLERY PLACEHOLDERS */}
+        <section id="gallery" className="section-divide max-w-6xl mx-auto">
+           <h2 className="editorial-title mb-12">Tư Liệu Hình Ảnh.</h2>
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+              <div className="md:col-span-2 md:row-span-2 bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                 <ImageIcon size={48} className="mb-2 opacity-20" />
+                 <span className="font-mono text-xs">NO SIGNAL</span>
+              </div>
+              <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                 <span className="font-mono text-xs">IMG_001.JPG</span>
+              </div>
+               <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                 <span className="font-mono text-xs">IMG_002.JPG</span>
+              </div>
+               <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                 <span className="font-mono text-xs">IMG_003.JPG</span>
+              </div>
+               <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                 <span className="font-mono text-xs">EVIDENCE_A.PNG</span>
+              </div>
+           </div>
+        </section>
+
+        {/* TIMELINE: The Path */}
+        <section className="section-divide max-w-4xl mx-auto text-center">
+          <h2 className="editorial-title">Lộ Trình Nhận Thức.</h2>
+          <p className="editorial-text mx-auto mb-16">
+            Hành trình từ bóng tối ra ánh sáng (hoặc ngược lại).
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { 
+                step: "01", 
+                name: "Eikasia", 
+                vi: "Ảo Ảnh",
+                desc: "Kẹt trong 'Cái Hang'. Nhìn đời qua những chiếc bóng và tin đó là sự thật."
+              },
+              { 
+                step: "02", 
+                name: "Pistis", 
+                vi: "Niềm Tin",
+                desc: "Bắt đầu nhận thức được các sự vật hữu hình, nhưng chưa chạm tới bản chất." 
+              },
+              { 
+                step: "03", 
+                name: "Dianoia", 
+                vi: "Suy Luận",
+                desc: "Sử dụng logic và toán học để đặt câu hỏi về thực tại giả dối."
+              },
+              { 
+                step: "04", 
+                name: "Noesis", 
+                vi: "Tri Thức",
+                desc: "Giác ngộ. Thoát khỏi hang động và đối diện với Mặt Trời rực rỡ."
+              }
+            ].map((item, i) => (
+              <div key={i} className="border border-line p-6 hover:border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-300 cursor-default group h-full flex flex-col justify-between bg-white">
+                <div>
+                  <span className="font-mono text-sm opacity-50 block mb-2">{item.step}</span>
+                  <h3 className="font-serif text-xl font-bold">{item.name}</h3>
+                  <p className="text-xs uppercase tracking-widest mt-1 opacity-70 group-hover:text-accent mb-4">{item.vi}</p>
+                </div>
+                <p className="text-sm leading-relaxed opacity-80 border-t border-line/30 pt-4 group-hover:border-black/10">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer className="border-t border-line py-12 mt-20 bg-paper">
+          <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-center md:text-left">
+              <h3 className="font-serif text-2xl font-bold mb-2">CLB Triết Học Anh Thắng</h3>
+              <p className="text-xs font-mono text-ink-light">© 2026 Kumo Studio. All Rights Reserved.</p>
+            </div>
+            
+            <a 
+              href="https://hygef-v4.itch.io/brother-thang-philosophy-club" 
+              target="_blank"
+              className="flex items-center gap-2 text-sm font-bold border-b border-black pb-1 hover:text-accent hover:border-accent transition-colors"
+            >
+              <Download size={16} />
+              Download on Itch.io
+            </a>
+          </div>
+        </footer>
       </main>
     </div>
   );

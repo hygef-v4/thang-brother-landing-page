@@ -1,0 +1,805 @@
+CHƯƠNG 1: EIKASIA (ẢO ẢNH)
+
+CẢNH 1: (NHÀ – ĐÊM)
+ Đêm khuya.
+Main:
+ (lo lắng) “Ok… check điểm nào…”
+Click.
+Danh sách trúng tuyển dài đằng đẵng hiện ra.
+ Nhưng lại… không có tên mình.
+Main:
+ (thở dài)
+“…Hầy.”
+Không buồn.
+ Không sốc.
+ Chỉ là cảm giác quen quen… Như mấy lần mở ví ra dù biết trước nó trống trơn.
+Main:
+ (Chắc do hội đồng không đủ trình để hiểu nghệ thuật của mình…)
+Cánh cửa mở.
+ Bố tôi, Võ Quang Hưng, một Đại Tá quân đội, bước vào.
+Bố:
+ “Trượt rồi à?”
+Main:
+ “Vâng… con thấy mình làm bài cũng ổn áp mà nhỉ.”
+Bố:
+ “Ừ. Ổn cái đầu mày ý!”
+Main:
+ “…?”
+Bố:
+ “Thôi. Trượt rồi thì vào FPT mà học đi.”
+ “Ít nhất cũng phải lấy được cái bằng Đại học.”
+Main:
+ “Nhưng…
+Bố:
+ “Nhưng nhị cái gì!”
+ “Mày có nghe lời tao không thì bảo hả?”
+Main:
+ “….”
+ “Dạ vâng ạ...”
+
+CẢNH 2: - NGÀY 1 (SÂN – SÁNG)
+ Tại sân trường FPT.
+Sân trường đông nghịt.
+ Ai cũng trông như nhân vật chính của cuộc đời mình.
+ Còn mình thì như một thằng NPC vừa spawn vậy.
+Main:
+ (Đông quá!)
+ (Đông thế này chắc không ai để ý mình đâu nhỉ.)
+Bỗng nhiên, điện thoại bất ngờ nhận một cuộc gọi từ số lạ.
+VÕ MINH XỈU:
+ “Alo Thắng à, em có phải là Thắng không?”
+Main:
+ (???)
+ “Dạ vâng. Cho hỏi ai đấy ạ?”
+VÕ MINH XỈU:
+ “Chị là Võ Minh Xỉu. thành viên câu lạc bộ Triết học Plato.”
+ “Nghe bảo cu em là sinh viên mới, không biết có rảnh không nhỉ?”
+ “Nếu rảnh thì tham gia CLB của bọn chị đi. Khi tham gia sẽ có cơ hội nhận được rất nhiều ưu đãi hấp dẫn…”
+Main:
+ “Dạ thôi chị ơi, em hơi bận xíu...”
+VÕ MINH XỈU:
+ “Ui, thôi em đừng có chối, thông tin về chiều cao, cân nặng, sở thích, địa chỉ nhà trọ, lịch sinh hoạt của em,… chị có cả rồi ở đây rồi. Cu em có cần chị đọc cho nghe một số thông tin không?”
+Main:
+ “Hả? Thôi thôi cho em xin…”
+VÕ MINH XỈU:
+ “Nếu vậy thì hãy tham gia ngay cùng bọn chị nào! Vậy nhá, chị rất mong chờ được gặp lại em tại CLB Triết học Plato, tầng 2, phòng 217, toà Beta, Trường Đại học FPT!”
+Main:
+ (Mình không muốn vào đó đâu, nghe chán lắm!)
+(Nhưng nếu người ta đã mời như vậy thì từ chối có vẻ cũng hơi ngại…)
+CHOICE
+[Có] – “Dạ vâng, em sẽ tham gia ạ”
+VÕ MINH XỈU:
+ “Ngon~ Học xong nhớ lên đăng ký em nhé. Bái bai!”
+
+CẢNH 3: (CLB – CHIỀU)
+Mở cửa ra, trước mặt là một người con gái đứng nhìn xuống dưới sân trường.
+ Đó có lẽ là hội trưởng CLB Triết học Plato – Vũ Hải Nữ.
+VŨ HẢI NỮ:
+ “Eikasia.”
+Main:
+ “..?”
+ (Nghe giống như tên một món vũ khí trong game RPG nào đó vậy.)
+VŨ HẢI NỮ:
+ “Là cấp độ thấp nhất của nhận thức.”
+Hội Trưởng quay lại, nhìn thẳng vào main.
+VŨ HẢI NỮ:
+ “Cậu kia. Cậu thấy bầu trời màu gì?”
+Main:
+ (bối rối) “Ờ… màu xanh ạ.”
+VŨ HẢI NỮ:
+ “Thiển cận!”
+ “Mặt trời không chỉ phát ra một màu, mà là cả một phổ ánh sáng.”
+ “Nếu tôi nói… Bầu trời thực chất chỉ là khoảng đen của vũ trụ.”
+Main:
+ “…Hả?”
+VŨ HẢI NỮ:
+ “Bầu trời vốn không hề xanh.”
+ “Màu xanh cậu thấy… Là ánh sáng bị tán xạ… Chỉ là ảo ảnh mà cậu tạo ra để diễn giải về thế giới.”
+Một khoảng im lặng…
+VŨ HẢI NỮ:
+ “Vậy cậu đến đây làm gì?”
+Main:
+ (Gượng cười) “Dạ em muốn gia nhập CLB ạ!”
+VŨ HẢI NỮ:
+ “…”
+ “Được thôi… Cậu được nhận.”
+
+CẢNH 4: (KTX – TỐI)
+VÕ MINH XỈU:
+ “Ê cu.”
+Main:
+ “Dạ?”
+VÕ MINH XỈU:
+ (cười đểu) “Tân sinh viên hả?”
+ “Muốn chơi một trò chơi đêm muộn khiến bao con người thổn thức chứ?”
+Main:
+ (Đỏ mặt) “Dạ?”
+VÕ MINH XỈU:
+ “Đùa xíu thôi! Tối nay đang có trận MU đá với MC, cu em có muốn vào xem cùng chị không nào?”
+ “Cơ mà chỉ xem thôi thì chán phèo, hay là chị em mình làm trận cá cược đi nhỉ?”
+ “Nhóc thấy thế nào?”
+Main:
+ (Nghe có vẻ nguy hiểm. Cơ mà có tận 50% cơ hội thắng mà, hay thử xíu nhỉ?)
+CHOICE
+[Có] – “Chơi thì chơi, sợ gì?”
+VÕ MINH XỈU:
+ “Có chí khí đấy, vậy cu em theo đội nào?”
+CHOICE
+[0] – “ALL IN MU!!!”
+ [1] – “ALL IN MC!!!”
+Main:
+ “Dạo này MU đá đần lắm… Thôi thì theo MC vậy!”
+VÕ MINH XỈU:
+“OK! OK! Vậy thì chị theo MU.”
+VÕ MINH XỈU:
+ [0] – “Ây da! Thua mất rồi! Lần này coi như em gặp may.”
+ “Cu em được đấy! Lần sau lại chơi tiếp nhá.”
+ “Chị ở phòng bên cạnh, nếu cần gì cứ sang gọi chị nhá!”
+
+CẢNH 5: (CLB – SÁNG)
+Vừa bước vào phòng CLB, tình cờ thế nào lại gặp lại chị gái tối qua.
+VÕ MINH XỈU:
+ “Ô! Xem ai đây kìa! Cu em là thành viên mới của cái CLB tẻ nhạt này à?”
+ “Trùng hợp ghê, chị cũng là thành viên đó!”
+ “Hữu duyên thế này thì tối này chị em ta lại phải làm ván cá độ rồi!”
+CHOICE
+[Có] – “Dạ vâng…”
+VŨ HẢI NỮ:
+ “XỈU!!!”
+Hội trưởng bước vào.
+VŨ HẢI NỮ:
+ “BÀ LẠI ĐI GỌI ĐIỆN CHÈO KÉO THÀNH VIÊN VÀO CLB ĐỂ TIỆN TAY LỪA ĐẢO NỮA HẢ?”
+ “HÔM QUA CÓ MỘT NGƯỜI MỚI GIA NHẬP, CÓ PHẢI LÀ DO BÀ DỤ DỖ KHÔNG HẢ?”
+ “ĐÂY LÀ CLB TRIẾT CHỨ KHÔNG PHẢI Ổ LỪA ĐẢO CỦA BÀ ĐÂU NHÁ”
+VÕ MINH XỈU:
+ (lủi mất) “Đùa tí, làm gì căng.”
+VŨ HẢI NỮ:
+ “Còn cả cậu nữa, ai rủ gì cậu cũng làm à? Chính kiến của cậu đâu hả?”
+Main:
+ “Dạ…. Dạ…. Tại em nghĩ chỉ chơi cho vui thôi chứ đâu có biết là lừa đảo….”
+VŨ HẢI NỮ:
+ “Thật là một niềm tin mù quáng….”
+ “Sống trên đời phải biết nghi ngờ, nếu không thì chả khác nào mấy thằng nghe lời người ta cầm 2 tỷ đầu tư vào HDPE để rồi tán gia bại sản”
+ “Thôi được rồi… nay cậu về đì.”
+(HÀNH LANG – SÁNG)
+VÕ MINH XỈU:
+ “Cu em chịu khó ngồi nghe cái bà hội trưởng đấy lảm nhảm thế nhỉ?”
+ “Phải chị chị làm vội ba giấc rồi!”
+ “Thế kèo của chị em mình tối nay chú tính thế nào? Chơi hay không chơi nói một lời nào.”
+Main:
+ (Thắng ăn cả mà thua thì ăn ***, có lẽ mình nên suy nghĩ cẩn thận một chút…)
+CHOICE
+[Có] – “Chơi thì chơi, sợ gì?”
+ [Không] – ”Thôi, nay em xin kiếu!”
+VÕ MINH XỈU:
+[Có] – “Ngon, thắng rồi! Tiền cu em chị xin nhá!”
+ [Không] – “Chậc... Tuỳ cu.”
+
+CẢNH 6: (SÂN – CHIỀU)
+VÕ MINH XỈU:
+ “Ây cu.”
+ “Đừng giận chị nha.”
+ “Dù sao thì chị em mình cũng cùng CLB, phòng lại còn cạnh nhau nữa…”
+ “Hay là, để tạ lỗi, chị dắt em đi xem trường nha.”
+CHOICE
+[Có] – “Không sao, em cũng không giận gì đâu.”
+ [Không] – ”Em cũng tham quan vòng rồi, không cần phiền chị đâu ạ.”
+[Có] – “Ngon. Chị em mình cứ thế thôi, hẹ hẹ hẹ.”
+ [Không] – ”Thế thôi vậy. Em về nha, chị đi trước đây.”
+VÕ MINH XỈU:
+ “Được rồi, để chị dẫn đoàn nhà mình đi tham quan trường nào!”
+VÕ MINH XỈU:
+ “Đầu tiên là thư viện, là một nơi vô cùng lý tưởng để ngồi ôn lại bài cũ…, hoặc là ngủ.”
+ “Nghe bảo Hội Trưởng thích mấy anh zai học bá đó, nếu em định tán chị ấy thì tốt nhất thử thông thạo bảy mấy món triết học Mác Leenin hay Tư tưởng Hồ Chí Minh đi.”
+Main:
+ “Ghê vậy sao? Học xong đống đấy thì chắc tu vi đắc đạo lúc nào chả biết.”
+VÕ MINH XỈU:
+“Kế đến là phòng Gym, nơi các anh giai sáu múi flex đống cơ của mình.”
+ “Gu chị là mấy anh chàng cao to đen hôi thể hình lực lưỡng, thi thoảng ra ngó mấy anh giai chống đẩy mà thèm chảy nước dãi.”
+Main:
+ “Tém tém thôi chị ơi, liêm sỉ trôi theo hàng nước của chị rồi kìa.”
+VÕ MINH XỈU:
+ “Cuối cùng là căng tin, nơi sinh hoạt văn hoá của hội những người không biết xấu hổ.”
+Main:
+ “A! Con lợn này.”
+VÕ MINH XỈU:
+ "Đây là robot bán hàng số hiệu T31 tên đầy đủ là DaoChiCuong do tập đoàn FPT sản xuất."
+ "Phế lắm, chị chửi nó suốt. Mong sau này robot xâm chiếm thế giới nó không nhớ mặt chị."
+T31:
+ "Hasta la vista, baby." ? "I’ll be back."
+VÕ MINH XỈU:
+ “Thôi muộn rồi, chị té trước đây nha."
+
+CẢNH 7:
+ (SÂN – TỐI)
+Main:
+ “Tan học rồi, về thôi”
+ “Thôi chết, chìa khoá đâu rồi”
+ “Hình như mình để quên trên phòng CLB rồi”
+(CLB – TỐI)
+Phòng CLB vẫn sáng đèn.
+ Hội Trưởng ở trong phòng, trước mặt là một chồng sổ sách cao chạm trần!!?
+VŨ HẢI NỮ:
+ “Cậu là thành viên mới. Muộn rồi còn tới đây làm gì?”
+Main:
+ “Em để quên chìa khoá ạ.”
+VŨ HẢI NỮ:
+ “Chìa khoá hả? Tôi thấy nó nên đặt ở kia kìa.”
+Đã tìm thấy chìa khóa, đang định đi về….
+VŨ HẢI NỮ:
+ “Này.”
+Main:
+ “Dạ?”
+VŨ HẢI NỮ:
+ “Giúp tôi xử lý đống sổ sách này với được chứ.”
+ “Tất nhiên tôi sẽ trả lương theo ngày.”
+Main:
+ (Sổ sách nhiều vượt mức pickleball rồi, cơ mà vừa hay, tiền mình có hơi vô gia cư…)
+“Dạ vâng ạ…”
+Tài liệu chất đống như núi, xử lý xong thì cũng đã muộn.
+VŨ HẢI NỮ:
+ “Nay cảm ơn cậu. Không có cậu chắc tôi bị đống giấy tờ này bán hành đến chết mất!”
+ “…”
+ “Chiều nay… Tôi có hơi nặng lời.”
+ “Nhưng mà… Con người khác với mọi sinh vật ở khả năng suy nghĩ và phản biện.”
+ “Suy nghĩ và phản biện là nền móng của triết học.”
+ “Nếu cậu thật sự muốn tham gia CLB này, thì mong cậu hãy học cách tư duy…”
+
+CHƯƠNG 2: PISTIS (NIỀM TIN)
+
+CẢNH ĐẦU: – NGÀY 2 (KTX - SÁNG)
+ Chuông báo thức reo.
+Main:
+ (ngáp) “Buồn ngủ quá… Qua thức xem stream anh Độ hơi khuya rồi…”
+ “Tài khoản tự nhiên được cộng thêm tiền này! Hội trưởng bảo trả lương theo ngày là thật sao?”
+ “Chà… Người đâu mà đã xinh đẹp, giàu có lại tốt tính.Có phú bà bao nuôi thế này, cuộc sống đại học mình bắt đầu từ đây!”
+
+(CLB – SÁNG CHIỀU)
+[Nói chuyện với Hội Trưởng]
+VŨ HẢI NỮ:
+ “Cậu… Có vẻ đã thoát khỏi cái hang của mình rồi nhỉ?”
+Main:
+ (bối rối) “Ơ… Dạ?”
+ "…"
+ "Chuyện lần trước… Cảm ơn chị đã nhắc em về trò lừa bịp của chị Xỉu.”
+VŨ HẢI NỮ:
+ “Không có gì."
+Main:
+ “…"
+ "Mạn phép cho em hỏi, cái từ mà lần trước chị nói khi mới gặp em ấy. Eika… gì ấy nhở?"
+VŨ HẢI NỮ:
+ “Eikasia."
+Main:
+ “Nó là gì vậy ạ?"
+VŨ HẢI NỮ:
+ “…”
+ “Cậu biết ngụ ngôn về cái hang của Plato chứ?”
+Main:
+ “Dạ không.”
+VŨ HẢI NỮ:
+ “Ngày xửa ngày xưa, có vài người cổ đại sống ở dưới đáy của một cái hang động.”
+ “Cái hang đấy có một cái lỗ nhỏ, nơi một ít ánh sáng lọt vào.”
+ “Từ cái lỗ đó, có những cái bóng lấp ló hắt lên trên bức tường của cái hang.”
+ “Những người cổ đại nhìn thấy nó và đặt tên cho những ảo ảnh này và tin rằng vạn vật chỉ là những cái bóng.”
+ “Một ngày nọ, một người cổ đại tìm được cách thoát ra khỏi cái hang.”
+ “Lần đầu tiên trong đời, anh ta thấy được hình dạng thực của những cái bóng.”
+ “Anh ta vui mừng quay lại hang động và kể cho những người bạn nghe.”
+ “Tuy nhiên, những người bạn lại nghĩ anh ta bị điên… Và thế là họ... Cô lập anh ta đến chết.”
+Main:
+ “Thật là một câu chuyện bi thảm."
+VŨ HẢI NỮ:
+ “…”
+ “Những người cổ đại, họ chỉ thấy những cái bóng.”
+ “Họ bị kẹt trong cái gọi là Eikasia. Họ chỉ nhìn thấy những thứ được cho nhìn thấy.”
+ “Vậy theo cậu, người đàn ông tìm được đường ra khỏi hang liệu đã thấy được hình dạng thật của những chiếc bóng?”
+CHOICE
+[Có] – “Nhìn thấy được rồi thì tức là thật!”
+ [Không] – ”Có lẽ là chưa….”
+(cười mỉm) “Thật ra thì, cái hang của nằm trong một khu bảo tồn người cổ đại!”
+ “Những thứ mà người đàn ông đó thấy chỉ là những đồ giả mà thôi.”
+ “Vì vậy, anh ta vẫn chưa thoát khỏi ý niệm của bản thân, vẫn bị kẹt trong Pistis…”
+Bàn luận về triết học cùng Hội Trưởng tới hết buổi + BUỔI
+
+(THƯ VIỆN – SÁNG CHIỀU)
+[Học bài] Giở sách vở ra, ôn lại bài cũ.
+Main:
+ [Học tập < 20] – “Ra là thế… Chả hiểu gì cả.”
+ [Học tập < 50] – “Hừm…. Bài này khó hiểu quá…”
+ [Học tập < 80] – “Có một số chỗ chưa hiểu lắm, lần sau lên lớp hỏi lại cô vậy.”
+ [Học tập < 100] – “Ồ, kiến thức mới đã được tiếp thu.”
+ [Học tập == 100] – “Mấy bài này dễ quá, có lẽ mình nên tìm thứ khác khó hơn.”
+
+(GYM – SÁNG CHIỀU)
+[Luyện tập] Rèn luyện cơ thể, giải toả tinh thần.
+Main:
+ [Sức khoẻ < 20] – “Mệt quá… Chịu rồi...”
+ [Sức khoẻ < 50] – “Phù… Nay đến đây thôi vậy”
+ [Sức khoẻ < 80] – “Cố thêm… Một xíu nữa thôi…”
+ [Sức khoẻ < 100] – “Chà, tập xong nhìn mình có vẻ đẹp trai hơn rồi đấy.”
+ [Sức khoẻ == 100] – “Mấy cái này nhẹ quá, hết cái nặng hơn rồi à?”
+
+(KTX – TỐI)
+[Nói chuyện với Xỉu]
+VÕ MINH XỈU:
+ “Chào mừng đến với dịch vụ Campuchia gì cũng tôn của Xỉu. Cu em cần gì nào?”
+CHOICE
+[Học tập] – Dịch vụ gia sư học tập
+ [Đời sống] – Dịch vụ bồi bổ đời sống
+VÕ MINH XỈU:
+ “OK luôn. Cứ giao cho chị. Tối nay chị sẽ chăm sóc cu em nhiệt tình.”
+[Về phòng] Đi ngủ
+
+‘CHƯƠNG 3: DIANOIA (LÝ TRÍ)
+
+CẢNH MỞ ĐẦU – NGÀY 10 (KTX – SÁNG)
+Điện thoại rung.
+Bố:
+ <Đóng gói hành lý đi. Chiều về trại quân sự để làm thủ tục đi lính.>
+Main:
+ “..?”
+ “Đang yên đang lành sao tự nhiên bố lại bảo đi lính?”
+ “Thôi thì đến hỏi cho ra lẽ vậy.”
+
+(TRẠI – SÁNG)
+Bố:
+ “Con tới rồi hả?”
+ “Bố chuẩn bị sẵn thủ tục nghĩa vụ quân sự rồi.”
+ “Giờ đi theo bố kiểm tra thể lực.”
+ “Xong về thì nhớ làm cái giấy thôi học.”
+Main:
+ “Sao tự nhiên lại nghỉ học hả bố?”
+ “Trên trường việc học của con vẫn ổn mà?”
+Bố:
+ “Thời buổi nào rồi mà còn học Đại học nữa.”
+ “Mỹ đang lục đục đánh nhau với Cuba rồi.”
+ “Con phải vào quân đội để lên đường bảo vệ Tổ Quốc.”
+ “Chứ cứ ru rú ở hậu phương thì làm được gì?”
+Main:
+ “Ở hậu phương đâu phải là không đóng góp được gì cho Tổ Quốc?”
+ “Con vẫn có thể góp sức xây dựng Xã hội mà?”
+ “Đất Nước cũng là một thực thể triết học, nó cần phải vận động để có thể tồn tại, sự vận động đó không chỉ đến từ việc bảo vệ mà còn phải đến từ việc phát triển để tiến bộ.”
+ “Nó tạo ra cho chúng ta những tri thức, mà tri thức là sức mạnh giúp cho Đất Nước hùng cường hơn.”
+Bố:
+ “Chỉ có những nhà khoa học xuất sắc mới đủ sức tạo ra tri thức, loại hoạ sĩ quèn như mày thì làm ăn được cái gì cho Tổ Quốc?”
+ “Thôi! Vào quân đội rèn luyện kỷ luật, chứ làm hoạ sĩ ra ngoài lương được mấy đồng?”
+Main:
+ “Hoạ sĩ nước mình vất vả, nhưng họ dâng hiến tất cả!”
+ “Con muốn trở thành hoạ sĩ để góp phần làm đẹp cho Đất Nước chứ không phải chỉ vì tiền!”
+Bố:
+ “MỚI LÊN ĐẠI HỌC CÓ VÀI NGÀY MÀ CÁI MỒM ĐÃ LEM LẺM, PHÉP TẮC GIA ĐÌNH Ở ĐÂU HẢ?”
+ “MÀY MÀ KHÔNG NGHE LỜI TAO THÌ MỌI CHUYỆN SAU NÀY TỰ THÂN MÀ LO LẤY, TAO KHÔNG CHU CẤP CHO NỮA.”
+CHOICE
+[Có] – “Dạ… Vâng ạ….” => Ending Phát Xít
+ [Không] – ”Con có thể tự lo cho bản thân mình rồi, không cần bố bao bọc nữa!”
+(KTX – TỐI)
+Main:
+ “Không còn tiền chu cấp, áp lực tài chính của mình tăng lên rồi, từ ngày mai phải tiết kiệm lại thôi.”
+
+[Phát xít]
+CẢNH KẾT THÚC – NGÀY ?? (TRẠI – SÁNG)
+Mấy chục năm sau, thế giới bước qua cuộc Chiến tranh Thế Giới thứ 3.
+ Cuộc chiến kết thúc với sự thống trị của một tên độc tài.
+ Khi ấy, tên độc tài ấy đang trong một bong ke chuẩn bị cho buổi tử hình tập thể các nhà triết gia.
+Main:
+ “Khi đứng đây thì tôi muốn nói chuyện với bố tôi!
+ “Bố ơi, bố ơi, bố thấy đúng khi cho con nghỉ học chưa.”
+ “Năm xưa các người chê nghệ thuật của tôi không nhìn xa trông rộng, nay tôi vẽ lại cả bản đồ thế giới, các người thấy đã đủ rộng rồi chứ?”
+ “Còn những tên triết gia này, chỉ giỏi kích động mõm.”
+ “Thế giới mới do ta xây dựng không cần tranh luận, không cần biện chứng, không cần triết học.”
+ “Chỉ cần một chân lý duy nhất, chính là ta.”
+
+CẢNH 1 – NGÀY 11 (KTX – SÁNG)
+Điện thoại rung.
+VÕ MINH XỈU:
+ <Đi uống không cu? Nay chị bao!>
+Main:
+ “Của rẻ là của công an… Có khi nào chị ấy bị bắt nên khai ra mình không nhỉ?”
+CHOICE
+[Có] – <Nổ cho em cái địa chỉ nào!>
+ [Không] – <Tiếc quá, nay em lại có việc bận rồi…>
+
+Đến quán nhậu Xỉu gửi, thấy đàn chị đang say khướt.
+VÕ MINH XỈU:
+ “Cu em đến rồi à? Lại đây uống với chị nào!"
+Main:
+ “Chị ổn chứ, trông chị say lắm rồi đấy."
+VÕ MINH XỈU:
+ “Chị mày vẫn uống được, bà chủ, dâng tửu."
+Main:
+ “Nay có chuyện gì buồn sao?”
+Xỉu im lặng không nói gì.
+Main:
+ “Em thấy nay chị uống hơi nhiều rồi đấy. Nếu có gì buồn phiền, cứ nói em.”
+ “Chẳng giúp được gì chị đâu, cơ mà đỡ hơn là giữ trong lòng.”
+VÕ MINH XỈU:
+ “…”
+ “Gia đình chị sắp không còn nữa rồi…”
+Main:
+ “!!?”
+ “Có chuyện gì xảy ra à? Bố mẹ chị cãi nhau hả?"
+VÕ MINH XỈU:
+ “Không phải bố mẹ, chỉ là những người đã nuôi chị lớn mà thôi."
+ "Chị từ nhỏ đã không biết mặt bố mẹ, được các vú em trong cô nhi viện nuôi lớn."
+ "Cuộc sống trong cô nhi viện cũng khá khó khăn, điều kiện ăn uống sinh hoạt thiếu thốn đủ đường, đã thế còn khá là bức bối, đi đâu cũng có người theo quản."
+ "Cơ mà tình cảm của chị với các vú em thì lại khăng khít như ruột thịt vậy."
+Main:
+ “Em không biết hồi nhỏ chị lại sống cơ cực như vậy đấy."
+VÕ MINH XỈU:
+ “Thiếu thốn đủ đường như thế nên các vú em phải làm việc cho tụi xã hội đen từ đêm đến sáng."
+ "Chị từ khi còn nhỏ cũng đã phải đi làm rồi."
+Main:
+ (Làm việc cho xã hội đen sao, nghe nguy hiểm quá vậy.)
+ ”Từ nhỏ luôn sao? Chị bị bắt đi làm gì vậy?"
+VÕ MINH XỈU:
+ “Nhiều việc lắm, từ gọi điện quảng cáo đến tư vấn khách hàng."
+ "Thậm chí trước chị còn đóng vai công an để dọa ông chú kia phát khóc."
+ "Làm quần quật cả ngày, cơ mà mỗi lần không mời được khách thì lại bị tụi xã hội đen dùng dùi cui điện quật túi bụi."
+Main:
+ “!!?”
+ “Chị làm việc ở đâu mà nghe nguy hiểm quá vậy?”
+VÕ MINH XỈU:
+ “Ở khu tam thái tử bên Campuchia đấy.”
+ “Chị từ lúc sinh ra đã ở đấy rồi.”
+ “May sao được các vú em bao che cho nên mới trốn sang được Việt Nam.”
+ “Nhưng mà khu tự trị đó gần đây đã bị triệt phá, mái nhà xưa nơi chị lớn lên giờ đã chả còn.”
+ “Chỉ mong sao các vú em vẫn bình an.”
+Main:
+ “Vậy sao….”
+ “Đúng là cuộc sống luôn đầy rẫy bất công. Nhưng mà chị biết không...”
+ “Chính những trải nghiệm đó đã tạo nên chị của ngày hôm nay. Mạnh mẽ, kiên cường và luôn lạc quan.”
+ “Em tin rằng dù ở đâu, các vú em vẫn luôn dõi theo và tự hào về chị. Và quan trọng hơn cả...”
+ “Chị không cô đơn. Chị còn có tụi em, có CLB, và có cả em nữa.”
+VÕ MINH XỈU:
+ “….”
+ “Cảm ơn em.”
+Không khí cả buổi đi chơi bỗng rơi vào trầm tư, nhưng rất thích hợp để tịnh tâm suy nghĩ.
+[Tình cảm > 80]
+VÕ MINH XỈU:
+ “Này, muốn làm một ván cá cược với chị không?”
+ “Đoán xem…. Chị có đang phải lòng em không?”
+Main:
+ “Chị ấy có tình cảm với mình sao? Có lẽ mình nên suy nghĩ một chút.”
+CHOICE
+[Có] – “Có”
+ [Không] – ”Không”
+ [Suy nghĩ] – “Những lúc say thế này, con người thường rất dễ mềm lòng…”
+VÕ MINH XỈU:
+[Có] – “Lần này…. Em thắng rồi….”
+ [Không] – ”… Tiếc quá….”
+[End]
+VÕ MINH XỈU:
+“Thôi vậy chị về trước đây.”
+ “Nay cảm ơn cu em nhiều nha!”
+
+CẢNH 4 – NGÀY 11 (KTX – SÁNG)
+Điện thoại rung.
+VŨ HẢI NỮ:
+ <Đang có một bộ phim khá cuốn mà chị muốn xem, cơ mà đi một mình thì lại hơi ngại, em có muốn đi xem cùng chị không?>
+Main:
+ “Lâu rồi mình chưa đi xem phim, nhưng mà giá vé lại đắt quá…. Nên làm gì đây?”
+CHOICE
+[Có] – <Chị xem rạp nào vậy em tới đây>
+ (Nếu đủ tiền >= 100k) Main: "Được rồi, mình vẫn đủ tiền. Đi thôi!" (-100k)
+ (Nếu không đủ tiền) Main: "Chết dở, mình không đủ tiền vé rồi... Thành thật với chị ấy vậy." -> Hải Nữ nhắn lại: "Tôi bao."
+ [Không] – <Em cũng muốn đi lắm… Cơ mà tài khoản em lại không cho phép….> -> Hải Nữ nhắn lại: "Tôi bao."
+
+Đến rạp chiếu phim cùng Hội Trưởng để xem phim “The Truman Show”.
+ Phim khá ấn tượng, làm mình cũng phải nghi ngờ rằng liệu mình có đang ở trong một con game tình cảm nào đó không….
+VŨ HẢI NỮ:
+ “Bộ phim hay thật đấy nhỉ?”
+Main:
+ “Ừ! Cảnh kết lúc Truman cúi chào khán giả lần cuối quả thật là Absolutely Cinema.”
+VŨ HẢI NỮ:
+ “…”
+ “Cảnh đó… Cậu có nghĩ rằng, quyết định bước ra khỏi trường quay là đúng đắn chứ?”
+Main:
+ “Chắc chắn rồi, sao lại không chứ?”
+VŨ HẢI NỮ:
+“Theo tôi thì, nếu lơ những điều kỳ lạ xung quanh đi, có lẽ cuộc sống của cậu ấy sẽ hạnh phúc hơn.”
+ “Nhưng nó chỉ là một hạnh phúc giả tạo, theo kịch bản chứ không thực sự là điều cậu ta muốn.”
+[Tình cảm > 80]
+ VŨ HẢI NỮ:
+ “…”
+ “Cậu còn nhớ ngụ ngôn về cái hang chứ?”
+ “Tình cảnh của Truman giống như những người cổ đại vậy.”
+ “Đều bị mắc kẹt trong những quan niệm, những điều thân thuộc với bản thân.”
+ “Tuy nhiên, Truman đã phá bỏ những tưởng chừng như là chân lý để mà đến với thực tiễn.”
+ “Theo cậu, tại sao lại có sự khác nhau vậy?”
+CHOICE
+[Có] – “Là do mong muốn của cậu ta sao?”
+ [Không] – “Ờ… Cậu ta may mắn hơn sao?”
+ [Suy nghĩ] – “Có lẽ là do điều làm nên sự khác biệt giữa hai nhân vật…”
+“Nó là nhờ khát khao tìm ra chân lý, là nhờ sự tư duy và nhận thức của bản thân cậu ta, là nhờ Dianoia.”
+ “…”
+ “Ông tôi là một nhà triết gia…. Cả đời ông đi giao giảng về tầm quan trọng của triết học cho mọi người…”
+ “Nhưng họ lại nghĩ ông chỉ là một lão già lắm lời, cho rằng ông bị điên…. Họ cho rằng ông chỉ làm những điều vô nghĩa….”
+Main:
+ “…”
+ “Em không nghĩ thế đâu!”
+ “Có thể không phải tất cả, nhưng chắc chắn có nhiều người đã tìm được sự hứng thú với triết học nhờ ông….”
+ “…Trong đó có cả chị nữa…”
+ “…Và nhờ chị, em cũng đã yêu thích môn này rồi…”
+ “Vì vậy, hành động của ông không hề là vô ích.”
+VŨ HẢI NỮ:
+ “…”
+ “Cảm ơn em.”
+ “Em đã từng nghe đến hiện tượng vướng víu lượng tử chưa?”
+ “Có những hạt liên kết với nhau dù ở cách xa bao nhiêu, khi tính chất một hạt thay đổi thì cái kia cũng đổi theo.”
+ “Tôi từng không tin một vật có thể tác động đến vật khác ở khoảng cách xa vậy.”
+ “Cho đến khi, em tác động vào cuộc đời tôi….”
+Main:
+ “…”
+VŨ HẢI NỮ:
+ “Thôi muộn rồi…. Tôi về trước đây.”
+Main:
+ (Vừa nãy, có phải ý chị ấy là….)
+[End]
+Main:
+ (Chà… Buổi xem phim này làm mình phải suy nghĩ nhiều quá…)
+ (Liệu ngồi im theo sự sắp đặt của người khác hay tự lực bằng mong muốn của mình…. Quả là một lựa chọn khó khăn….)
+
+CHƯƠNG 4: NOESIS (TRI THỨC)
+
+[VÕ MINH XỈU and VŨ HẢI NỮ’s tình cảm > 80]
+CẢNH MỞ ĐẦU – NGÀY 14 (KTX – TỐI)
+Điện thoại rung.
+VÕ MINH XỈU:
+ <Ây cu. Tới CLB tí đi. Có việc.>
+Main:
+ (Giờ này còn gọi gì nữa nhở? Lại ra căng tin hát hò tuyển thành viên à?)
+ (Thôi thì cứ tới xem sao vậy.)
+(CLB – TỐI)
+Giữa phòng trưng một băng rôn Happy Birthday.
+VŨ HẢI NỮ:
+ “snvv nghen.”
+VÕ MINH XỈU:
+ “Em bé tuổi mới hay ăn chóng lớn nhá.”
+Main:
+ “…”
+ “Dạ em cảm ơn ạ.”
+VÕ MINH XỈU:
+ “Thôi vào phòng đi, để chị bật Happy Birthday to You cho bé này thổi nến nhá.”
+Đã lâu rồi mới vui như thế này, bạn ăn chơi suýt quên thời gian. Chỉ có điều…
+Main:
+ “Cơ mà ngày mai mới là sinh nhật em cơ mà, sao nay tổ chức sớm vậy?”
+Cả phòng bỗng im bặt.
+VŨ HẢI NỮ:
+ “Ngày mai, chị nghĩ em nên về nhà làm hoà với bố.”
+ “Dù sao cũng là gia đình, bố em thực sự chỉ lo cho em mà thôi….”
+VÕ MINH XỈU:
+ “Lo cho hộ lý khi về già thì có đấy!”
+VŨ HẢI NỮ:
+ “Xỉu!”
+VÕ MINH XỈU:
+ “Nói gì sai hả. Mấy người có gia đình hạnh phúc làm sao hiểu được nỗi khổ khi phải làm tất cả để hài lòng gia đình chứ?”
+ “Chị nghĩ em nên kệ họ đi, cứ làm theo mong muốn của bản thân là được.”
+VŨ HẢI NỮ:
+ “Vậy… Mong muốn của em là gì?”
+CHOICE
+[Có] – “Vậy thì… Để em về nói chuyện với bố…” => Duy vật siêu hình
+ [Không] – “Không cần đâu, em tin thời gian sẽ chữa lành tất cả.” => Duy tâm chủ quan
+ [Suy nghĩ] – “Những thứ mà mình học được những ngày qua, có lẽ sẽ giúp bố hiểu mình…” – “Em tin rằng, triết học giúp con người ta gắn kết lại với nhau!”=> Duy vật biện chứng
+
+[VÕ MINH XỈU’s tình cảm > 80]
+CẢNH MỞ ĐẦU – NGÀY 14 (KTX – TỐI)
+VÕ MINH XỈU:
+ “Ây cu, về rồi à?”
+ “Mai sinh nhật đúng không? »
+ “Chương trình thế nào đây nhỉ?”
+Main:
+ “…”
+ “Có lẽ em sẽ về nhà.”
+ “Từ hồi cãi nhau với bố em vẫn chưa về rồi…”
+VÕ MINH XỈU:
+ “Có ông bô như thế mà cậu vẫn chịu được thì đúng là thiếu mỗi cái áo cà sa là thành phật đấy.”
+ “Làm người phải biết tự lo cho bản thân, trước tiên cứ chill đi cái đã, những cái khác ắt sẽ tự dưng tốt lên thôi.”
+ “Như Nguyễn Du nói ấy: ‘Người buồn cảnh có vui đâu bao giờ?’”
+Main:
+ “Nhưng mà… Như thế có sợ ăn gậy vì vi phạm tiêu chuẩn cộng đồng không?”
+ “Dù sao thì em thấy, vẫn nên về xin lỗi bố một câu chứ, sợ sau này bố con nhìn mặt nhau cũng khó…”
+VÕ MINH XỈU:
+ “Ui giời ơi, em tôi cứ lo xa!”
+ “Mấy cái quy tắc đó sau cùng cũng chỉ là do con người tự đặt ra mà thôi.”
+ "Sao phải làm khổ mình vậy chứ, cứ sống theo bản thân mong muốn là được mà."
+ “Chị nghĩ em cứ kệ nó đi, rồi thời gian sẽ chữa lành tất cả mà.”
+CHOICE
+[Có] – “Dạ vâng, thế thì em nghe lời chị vậy.” => Duy tâm chủ quan
+ [Không] – “Em nghĩ vẫn nên về thì hơn...” => Duy vật siêu hình
+
+[VŨ HẢI NỮ’s tình cảm > 80]
+CẢNH MỞ ĐẦU – NGÀY 14 (KTX – TỐI)
+Điện thoại rung.
+VŨ HẢI NỮ:
+ <Em rảnh không. Tới CLB chị nhờ chút với.>
+Main:
+ (Giờ này còn gọi gì nữa nhở? Lại ra căng tin hát hò tuyển thành viên à?)
+ (Thôi thì cứ tới xem sao vậy.)
+(CLB – TỐI)
+Giữa phòng trưng một băng rôn Happy Birthday.
+VŨ HẢI NỮ:
+ “snvv nghen.”
+Main:
+ “…”
+ “Dạ em cảm ơn ạ.”
+VŨ HẢI NỮ:
+ “Thôi, vào ăn đi em, chị có đặt bánh sinh nhật cỡ bự cho em rồi đấy!”
+Đã lâu rồi mới vui như thế này, bạn ăn chơi suýt quên thời gian. Chỉ có điều…
+Main:
+ “Cơ mà ngày mai mới là sinh nhật em cơ mà, sao nay tổ chức sớm vậy?”
+VŨ HẢI NỮ:
+ “Ngày mai, chị nghĩ em nên về nhà làm hoà với bố.”
+ “Dù sao cũng là gia đình, bố em thực sự chỉ lo cho em mà thôi….”
+Main:
+ “Chuyện đó… Không phải em không muốn làm hoà với bố, mà là do nguyên nhân xuất phát từ áp lực bố em tạo ra, chỉ làm hoà thôi em nghĩ không ăn thua….”
+VŨ HẢI NỮ:
+ “Đúng là áp lực từ kỳ vọng của phụ huynh là rất lớn, nhưng nó là một động lực để ta có thể phát triển.”
+ “Mọi vật nếu muốn tồn tại, đều phải vận động mà phát triển, không thể cứ mãi trì trệ như thế được!”
+CHOICE
+[Có] – “Vậy thì… Để em về nói chuyện với bố…” => Duy vật siêu hình
+ [Không] – “Không, em đã chịu đựng quá đủ rồi!” => Duy tâm khách quan
+
+[Duy tâm khách quan]
+CẢNH MỞ ĐẦU – NGÀY 15 (KTX – ĐÊM)
+Đêm khuya, không ngủ được nằm trằn trọc suy nghĩ
+Main:
+ “Cuộc đời đúng là bể khổ."
+ "Mà lúc qua khổ thì cũng là lúc qua đời."
+ "Nếu vậy, rốt cuộc tại sao lại phải sống trong khổ đau vậy chứ?"
+Nhớ lại bộ phim The Truman Show hồi trước xem.
+Main:
+ “Cái thằng Truman đó, đã có một cuộc sống có thể gọi là trọn vẹn rồi, vậy mắc gì lại cứ phải tìm đường thoát khỏi trường quay chứ?”
+ “Thoát khỏi trường quay để rồi ra ngoài quay cuồng với cuộc sống thật như mình thì đúng là vô nghĩa.”
+ “…”
+ “Cuộc sống thật… Liệu mình có thật sự có cuộc sống thật chứ?”
+ “Hay cuộc sống của mình chỉ là một con game xoay quanh việc cày chỉ số và lấy lòng hai tiền bối?”
+ “Nếu vậy… Nó có ý nghĩa gì chứ?”
+  “Liệu thế giới này… Có thật sự tồn tại?”
+  “Tại sao mọi thứ lại trùng hợp đến lạ lùng như vậy?”
+  “Những biến số, chỉ số tình cảm, tiền bạc... Chúng thay đổi cứ như lập trình sẵn vậy.”
+  “Có lẽ nào... Mình cũng chỉ là một nhân vật trong game?”
+  “Nếu vậy, thì sự đau khổ này, niềm vui này... Đều là giả tạo ư?”
+  “Nếu thế giới này là giả... Thì ta cần gì phải tuân theo những luân thường đạo lý của nó?”
+ 
+ [NHẬN THỨC CỦA BẠN ĐÃ VƯỢT RA KHỎI THỰC TẠI NÀY. BẠN CHỌN KHÔNG TIN VÀO THẾ GIỚI. KẾT THÚC: VÒNG LẶP HƯ VÔ]
+
+[Duy tâm chủ quan]
+CẢNH 1: – NGÀY 15 (CLB – SÁNG)
+VÕ MINH XỈU:
+ “Ái chà, bé Thắng hôm nay lớn thế nhở.”
+ “Sang tuổi mới có khác trông đĩnh đạc hẳn ra, 10 điểm không có nhưng.”
+Main:
+ “Dạ vâng cảm ơn chị. Nhờ ơn chị tận tình chăm sóc mà thằng bé mới lớn thế này ạ.”
+VÕ MINH XỈU:
+ “Chú cứ quá lời. Chị có làm gì đâu. Thằng bé nó tự lớn lên đấy chứ.”
+ “Theo như bà chị triết gia nhà chị thì chắc chắn đây là duy tâm rồi.”
+ “Bởi vì thằng bé nó muốn đi khám phá thế giới mới nên nó mới tự lớn lên.”
+ “Đúng nhận sai cãi nào?”
+ 
+ Main:
+  “Đúng vậy. Em đã chọn rồi. Kệ bố đi.”
+  “Sống cho bản thân mình mới là quan trọng nhất.”
+  “Gia đình mà chỉ đem lại áp lực và khổ đau thì có cần thiết phải níu giữ không?”
+  “Em thà làm đứa con bất hiếu mà vui vẻ, còn hơn làm đứa con ngoan mà tâm hồn chết lặng.”
+ 
+ VÕ MINH XỈU:
+  “Chuẩn! Chị em mình cứ thế mà sống thôi!”
+Cả hai cùng cười phá lên.
+ Có thể cùng vui, cùng cười với những người mình chân quý thế này, cuộc sống thế là hạnh phúc rồi.
+
+[Duy vật siêu hình]
+CẢNH 1: – NGÀY 15 (NHÀ – SÁNG)
+Bạn về tới nhà, định mở cửa vào thấy bố đang đứng đợi.
+Bố:
+ “Vừa về hả con. Sao nhìn xanh sao gầy gò vậy, dạo này ăn uống có điều độ không đấy hả?”
+Main:
+ “Con vẫn khoẻ re mà. Bố cứ lo xa.”
+Bố:
+ “Thế học hành dạo này thế nào. Điểm thi IELTS đợt trước được bao nhiêu hả con?”
+Main:
+ “Con được tận 8.0 lận đó.”
+Bố:
+ “Sao có 8.0 hả? Con nhà người ta đi thi toàn khoe 9, 10, đằng này…
+Main:
+ “!!?”
+ “Vị cao nhân nào đi thi IELTS được 10.0 vậy bố?”
+Bố:
+ “Hình như là con của ông bác bên cơ quan bố. Nó vào trường sĩ quan thi tiếng anh IELTS gì đó được 10 nên được cất nhắc lên làm thông dịch viên cho thủ trưởng rồi.“
+ “Con cũng phải học tập anh đấy, vào quân đội không chỉ được rèn luyện kỷ cương phép nước, mà sau này cũng không phải lo nghĩ gì về cơm ăn áo mặc…”
+Main:
+ “Chuyện đấy… Con cũng suy nghĩ rồi.”
+ “Con biết trình độ của con không giỏi như bao người, cũng không có tài năng chạm đến trái tim của người khác.”
+ “Nhưng hiện tại, con muốn thử sức mình trong lĩnh vực thiết kế đồ hoạ trước đã.”
+ “Đời còn dài mà, sau khi học xong, lấy được cái bằng đã, rồi con sẽ suy nghĩ lại nghiêm túc xem có nên vào quân đội hay không?”
+Bố:
+“…”
+ “Con nhìn vào thực tại được như vậy là tốt.”
+ “Con… Cũng đã trưởng thành rồi.”
+ “Vậy thì, bố tin tưởng vào quyết định của con.”
+
+
+
+[Duy vật biện chứng]
+CẢNH 1: – NGÀY 15 (NHÀ – SÁNG)
+Bạn về tới nhà, định mở cửa vào thấy bố đang đứng đợi.
+Bố:
+ “Vừa về hả con. Sao nhìn xanh sao gầy gò vậy, dạo này ăn uống có điều độ không đấy hả?”
+Main:
+ “Con vẫn khoẻ re mà. Bố cứ lo xa.”
+Bố:
+ “Thế học hành dạo này thế nào. Điểm thi IELTS đợt trước được bao nhiêu hả con?”
+Main:
+ “Con được tận 8.0 lận đó.”
+Bố:
+ “Sao có 8.0 hả? Con nhà người ta đi thi toàn khoe 9, 10, đằng này…
+Main:
+ “!!?”
+ “Vị cao nhân nào đi thi IELTS được 10.0 vậy bố?”
+Bố:
+ “Hình như là con của ông bác bên cơ quan bố. Nó vào trường sĩ quan thi tiếng anh IELTS gì đó được 10 nên được cất nhắc lên làm thông dịch viên cho thủ trưởng rồi.“
+ “Con cũng phải học tập anh đấy, vào quân đội không chỉ được rèn luyện kỷ cương phép nước, mà sau này cũng không phải lo nghĩ gì về cơm ăn áo mặc…”
+Main:
+ “Bố à, trước đây con đã từng nói rồi đó, nghề hoạ sĩ tuy vất vả bộn bề nhưng cũng là một nghề đáng quý, cũng góp phần vào xây dựng Tổ Quốc….”
+ “Nhất là trong thời buổi hiện nay, còn bao người vẫn còn cổ hủ, lạc hậu, bị kẹt trong cái hang mang tên chân lý.”
+ “Con có một ước mơ. Đó là… Mang triết học đến gần hơn với mọi người bằng con đường hội hoạ!”
+Bố:
+ “Con thật sự nghĩ là chỉ cần có ước mơ là sẽ thành công à? Danh tiếng không có, tiền thì càng không, con định làm gì để cạnh tranh chứ?”
+Main:
+ “Có thể không ai để ý, nhưng nó không phải là vô ích, mà nó là nền móng cho sự thay đổi.”
+ “Sự thay đổi không hề diễn ra từ từ, liên tục mà nó là những bước nhảy vọt!”
+ “Tuy ban đầu có thể con chỉ là một hạt cát nhỏ nhoi giữa biển trời rộng lớn, nhưng cứ dần dần tích luỹ, khi đến điểm nút, con tin rằng khát khao của con sẽ chạm đến mọi người!”
+Bố:
+ “Không phải cứ tin là nó sẽ thành thật đâu! Những ý kiến mà con cho là cổ hủ lạc hậu đó với người khác nó lại là chân lý đấy. Một mình con làm sao có thể thay đổi được chứ?
+Main:
+ “Cái này…, nó thuộc phàm trù về cái chung và cái riêng.”
+ “Hai mặt nghe tưởng đối lập nhau, nhưng mà chúng nó cùng tồn tại trong một chính thể!”
+ “Cái chung cần cái riêng để tồn tại, còn cái riêng lại là biểu hiện của cái chung.”
+ “Vì vậy, khi cái riêng mâu thuẫn với cái chung, nó có thể tác động lên chính sự tồn tại của cái chung đó, thúc đẩy cho sự phát triển.”
+ “Chính con đã thay đổi nhờ sự tác động của người khác, vì thế nên con tin mong ước của con một ngày nào đó sẽ tác động được đến một ai đó, rồi người đó sẽ lại tác động đến người khác.”
+ “Rồi một ngày, con tin mong ước của con sẽ lan toả được tới mọi người!”
+Bố:
+ “Nhưng mà con ơi! Từ bao đời nay biết bao tư tưởng dậy lên rồi lại chìm xuống.”
+ “Có thể tư tưởng của con nó sẽ lan rộng, nhưng rồi một ngày nó cùng sẽ lắng xuống, thậm chí bị lãng quên, khi đấy con còn lại gì?”
+Main:
+ “Đúng vậy, nổi lên và chìm xuống là quy luật tất yếu của vạn vật!”
+ “Nhưng mà khi chìm xuống, nó không phải là kết thúc, mà là một khởi đầu mới.”
+ “Sự phát triển không phải là phủ định hoàn toàn cái cũ, mà là kế thừa và lặp lại những cái cũ trên cơ sở cao hơn.”
+ “Khi đó, con sẽ có thể tự hào nói rằng mình đã góp một công sức nhỏ nhoi nào đấy vào việc dựng xây Đất Nước.”
+Bố:
+ “Vậy… Sao…”
+ “Thôi được rồi, tuỳ con quyết định.”
+ “Nhưng hay nhớ, bố… luôn ở sau lưng con.”
+
+CẢNH 2: (CLB – CHIỀU)
+Làm hoà được với bố, vui vẻ quay lại CLB.
+VŨ HẢI NỮ:
+ “Em về rồi à, chuyện với bố em thế nào rồi?”
+Main:
+ “Cũng em xuôi cả rồi ạ.”
+VŨ HẢI NỮ:
+ “Thế thì tốt…”
+Căn phòng lại rơi vào im lặng.
+VŨ HẢI NỮ:
+ “Này…”
+ “Lại nói về chuyện các tầng của nhận thức của Plato…”
+ “Chị đã giải thích cho em về eikasia, pistis và dianoia rồi nhỉ?”
+ “Còn lại là noesis, em biết nó là gì rồi chứ?”
+Main:
+ “Là chân lý.”
+VŨ HẢI NỮ:
+ (gật đầu) “Đúng vậy, nó là thứ lý tưởng đẹp đẽ mà con người luôn tìm kiếm.”
+ “Thứ lý tưởng sáng rọi như mặt trời.”
+ “Con người từ khi sinh ra đã khao khát được thấy hình dạng thật của mặt trời, nhưng lại bị ánh sáng chói rọi của nó làm cho mù mắt.”
+ “Họ kinh sợ ánh sáng đó, tôn nó lên làm các vị thần.”
+ “Nhưng rồi họ phát triển hơn, tìm được những cách để nhìn vào mặt trời mà không làm mù loà đôi mắt.”
+ “Nhưng khi đó mặt trời không còn là thiên thể sáng nhất, rực rỡ nhất mà họ hằng tưởng tượng nữa.”
+ “Em có nghĩ rằng, một ngày nào đó nhân loại sẽ chạm được đến chân lý chứ?”
+Main:
+ “…”
+ “Chị nhớ hiện tượng vướng víu lượng tử chứ?”
+ “Hai hạt tưởng chừng như không liên quan gì đến nhau nhưng khi một hạt thay đổi hạt kia cũng đổi thay.”
+ “Theo em, bản chất của hiện tượng đó chính là sự gắn kết.”
+ “Có khả năng nào, những hạt nhân trong cơ thể người cũng vướng víu với những hạt nhân từ một thiên thể nào đó không?”
+ “Có thể nhân loại không thể với tới chân lý…”
+ “…cũng có thể chân lý luôn ở bên họ.”
+ “Như cách chị luôn ở bên em vậy.”
+

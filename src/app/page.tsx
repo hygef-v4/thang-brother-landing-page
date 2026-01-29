@@ -216,24 +216,38 @@ export default function Home() {
               {[
                 {
                   id: "NV-01",
+                  name: "Võ Thắng",
+                  role: "The Protagonist (Người Chơi)",
+                  desc: "Sinh viên trượt nguyện vọng 1. Bị bố Đại tá dọa bắt đi nghĩa vụ quân sự. Tìm kiếm ý nghĩa cuộc sống qua triết học.",
+                  icon: <User size={24} />
+                },
+                {
+                  id: "NV-02",
                   name: "Võ Minh Xỉu",
                   role: "The Hedonist (Khoái Lạc)",
                   desc: "Dân chơi, thích cá cược. Quá khứ bí ẩn tại Campuchia. Luôn tin rằng 'Vui là chính'.",
                   icon: <Download size={24} />
                 },
                 {
-                  id: "NV-02",
+                  id: "NV-03",
                   name: "Vũ Hải Nữ",
                   role: "The Idealist (Lý Tưởng)",
                   desc: "Hội trưởng CLB. Nghiêm túc, ám ảnh với 'Cái Hang Plato'. Muốn tìm ra Chân lý tuyệt đối.",
                   icon: <BookOpen size={24} />
                 },
                 {
-                  id: "NV-03",
+                  id: "NV-04",
                   name: "Đại Tá Hưng",
                   role: "The Authority (Quyền Lực)",
                   desc: "Bố của Thắng. Tin vào Kỷ luật thép. 'Quân đội sẽ dạy mày làm người'.",
-                  icon: <User size={24} />
+                  icon: <Users size={24} />
+                },
+                {
+                  id: "NV-05",
+                  name: "T31 (DaoChiCuong)",
+                  role: "The Observer (Quan Sát)",
+                  desc: "Robot bán hàng do FPT sản xuất. Xuất hiện tại căng tin. Có thể biết nhiều hơn ta tưởng...",
+                  icon: <Brain size={24} />
                 }
               ].map((char, i) => (
                 <RevealOnScroll key={i} delay={i * 0.2} direction="up">

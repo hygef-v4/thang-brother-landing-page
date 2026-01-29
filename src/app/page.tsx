@@ -87,10 +87,10 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-32 pb-20 px-6">
+      <main className="pt-20 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
         
         {/* HERO: Editorial Cover */}
-        <section className="max-w-6xl mx-auto mb-32 md:mb-48">
+        <section className="max-w-6xl mx-auto mb-16 md:mb-32 lg:mb-48">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,10 +101,10 @@ export default function Home() {
               <span className="font-mono text-xs uppercase tracking-widest text-ink-light">Visual Novel • Trinh Thám • Triết Học</span>
             </div>
             
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter mb-8">
-              Thoát Khỏi <br/>
-              <span className="italic text-ink-light">Cái Hang.</span>
-            </h1>
+            <h1 className="editorial-title mb-4 md:mb-6 max-w-4xl leading-tight text-4xl md:text-5xl lg:text-6xl">
+                Thoát Khỏi <br />
+                <span className="italic font-normal text-ink-light">Cái Hang.</span>
+              </h1>
             
             <div className="grid md:grid-cols-[1fr_2fr] gap-12 items-start mt-12">
               <div className="text-sm font-mono text-ink-light border-t border-black pt-4">
@@ -131,7 +131,7 @@ export default function Home() {
 
         {/* STORY: The Dossier */}
         <section id="dossier" className="section-divide max-w-6xl mx-auto overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16">
               <RevealOnScroll direction="left" delay={0.2}>
                 <div>
                   <h2 className="editorial-title">Vụ Việc.</h2>
@@ -189,7 +189,7 @@ export default function Home() {
                 </p>
              </RevealOnScroll>
 
-             <div className="grid md:grid-cols-3 gap-6 text-left">
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-left">
                 {[
                   "Căn phòng bí mật của Bố.",
                   "Cuốn nhật ký của Xỉu.",
@@ -212,7 +212,7 @@ export default function Home() {
               <h2 className="editorial-title mb-16">Hồ Sơ Nhân Vật.</h2>
             </RevealOnScroll>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               {[
                 {
                   id: "NV-01",

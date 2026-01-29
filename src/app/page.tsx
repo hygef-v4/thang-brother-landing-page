@@ -4,6 +4,53 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Brain, Clock, Download, FileText, User, Users, Play, HelpCircle, Image as ImageIcon } from "lucide-react";
 import Image from "next/image";
 
+// Reusable Reveal Component
+const RevealOnScroll = ({ 
+  children, 
+  delay = 0, 
+  duration = 0.8,
+  direction = 'up',
+  blur = false,
+  className = ""
+}: { 
+  children: React.ReactNode, 
+  delay?: number, 
+  duration?: number,
+  direction?: 'up' | 'down' | 'left' | 'right' | 'scale',
+  blur?: boolean,
+  className?: string
+}) => {
+  const getInitial = () => {
+    switch (direction) {
+      case 'left': return { opacity: 0, x: -50, y: 0 };
+      case 'right': return { opacity: 0, x: 50, y: 0 };
+      case 'up': return { opacity: 0, y: 50, x: 0 };
+      case 'down': return { opacity: 0, y: -50, x: 0 };
+      case 'scale': return { opacity: 0, scale: 0.9, y: 0 };
+      default: return { opacity: 0, y: 30, x: 0 };
+    }
+  };
+
+  const getTarget = () => {
+     switch (direction) {
+      case 'scale': return { opacity: 1, scale: 1, y: 0 };
+      default: return { opacity: 1, x: 0, y: 0 };
+    }
+  };
+
+  return (
+    <motion.div
+      initial={{ ...getInitial(), filter: blur ? "blur(10px)" : "blur(0px)" }}
+      whileInView={{ ...getTarget(), filter: "blur(0px)" }}
+      viewport={{ once: true, margin: "-10% 0px" }} // Trigger a bit earlier/later
+      transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }} 
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-paper text-ink selection:bg-accent selection:text-white">
@@ -83,200 +130,283 @@ export default function Home() {
         </section>
 
         {/* STORY: The Dossier */}
-        <section id="dossier" className="section-divide max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <h2 className="editorial-title">Vụ Việc.</h2>
-              <p className="editorial-text mb-6">
-                Chuyện gì xảy ra khi một thanh niên Gen Z bị kẹt giữa áp lực gia đình và những tư tưởng triết học quái đản?
-              </p>
-              <ul className="space-y-4 font-mono text-sm text-ink-light mt-8">
-                <li className="flex gap-4 items-start">
-                  <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">1</span>
-                  <p>Trượt đại học. Bị bố (Đại tá Quân đội) dọa bắt đi nghĩa vụ quân sự.</p>
-                </li>
-                <li className="flex gap-4 items-start">
-                  <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">2</span>
-                  <p>Tham gia CLB Triết Học để "lấy le" nhưng lại bị cuốn vào những cuộc tranh luận sinh tử.</p>
-                </li>
-                <li className="flex gap-4 items-start">
-                  <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">3</span>
-                  <p>Đối mặt với các luồng tư tưởng: Chủ nghĩa Khoái lạc (Xỉu) vs Chủ nghĩa Khắc kỷ (Hải Nữ).</p>
-                </li>
-              </ul>
+        <section id="dossier" className="section-divide max-w-6xl mx-auto overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-16">
+              <RevealOnScroll direction="left" delay={0.2}>
+                <div>
+                  <h2 className="editorial-title">Vụ Việc.</h2>
+                  <p className="editorial-text mb-6">
+                    Chuyện gì xảy ra khi một thanh niên Gen Z bị kẹt giữa áp lực gia đình và những tư tưởng triết học quái đản?
+                  </p>
+                  <ul className="space-y-4 font-mono text-sm text-ink-light mt-8">
+                    <li className="flex gap-4 items-start">
+                      <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">1</span>
+                      <p>Trượt đại học. Bị bố (Đại tá Quân đội) dọa bắt đi nghĩa vụ quân sự.</p>
+                    </li>
+                    <li className="flex gap-4 items-start">
+                      <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">2</span>
+                      <p>Tham gia CLB Triết Học để "lấy le" nhưng lại bị cuốn vào những cuộc tranh luận sinh tử.</p>
+                    </li>
+                    <li className="flex gap-4 items-start">
+                      <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">3</span>
+                      <p>Đối mặt với các luồng tư tưởng: Chủ nghĩa Khoái lạc (Xỉu) vs Chủ nghĩa Khắc kỷ (Hải Nữ).</p>
+                    </li>
+                  </ul>
+                </div>
+              </RevealOnScroll>
+              
+              <RevealOnScroll direction="right" delay={0.4}>
+                <div className="relative">
+                   {/* Embed Placeholder */}
+                  <div className="aspect-[16/9] bg-gray-100 border border-line flex items-center justify-center relative shadow-lg">
+                      <iframe 
+                        src="https://itch.io/embed/4237431?linkback=true&bg_color=fafaf9&fg_color=1c1917&link_color=000000&border_color=e7e5e4" 
+                        width="100%" 
+                        height="100%" 
+                        frameBorder="0"
+                        className="w-full h-full"
+                      />
+                  </div>
+                  <p className="font-mono text-xs text-center mt-2 text-ink-light">BẰNG CHỨNG #01: GAMEPLAY FOOTAGE</p>
+                </div>
+              </RevealOnScroll>
             </div>
-            
-            <div className="relative">
-               {/* Embed Placeholder */}
-              <div className="aspect-[16/9] bg-gray-100 border border-line flex items-center justify-center relative shadow-lg">
-                  <iframe 
-                    src="https://itch.io/embed/4237431?linkback=true&bg_color=fafaf9&fg_color=1c1917&link_color=000000&border_color=e7e5e4" 
-                    width="100%" 
-                    height="100%" 
-                    frameBorder="0"
-                    className="w-full h-full"
-                  />
-              </div>
-              <p className="font-mono text-xs text-center mt-2 text-ink-light">BẰNG CHỨNG #01: GAMEPLAY FOOTAGE</p>
-            </div>
-          </div>
         </section>
 
-        {/* MYSTERY SECTION */}
         <section id="mystery" className="section-divide max-w-4xl mx-auto text-center">
-           <div className="inline-flex items-center justify-center p-3 rounded-full bg-accent/10 text-accent mb-6">
-             <HelpCircle size={32} />
-           </div>
-           <h2 className="editorial-title mb-8">Những Bí Ẩn Bỏ Ngỏ.</h2>
-           <p className="editorial-text mx-auto mb-12">
-             Tại sao bố Thắng lại căm ghét Triết học đến vậy? 
-             Liệu Xỉu có thực sự là một "dân chơi" hay đang che giấu một quá khứ đen tối? 
-             Và quan trọng nhất... ai là người điều khiển thực tại này?
-           </p>
-           <div className="grid md:grid-cols-3 gap-6 text-left">
-              {[
-                "Căn phòng bí mật của Bố.",
-                "Cuốn nhật ký của Xỉu.",
-                "Thí nghiệm 'Cái Hang' của Nữ."
-              ].map((item, i) => (
-                <div key={i} className="bg-white p-6 border border-line shadow-sm">
-                   <span className="block font-mono text-xs text-accent mb-2">FILE #{i+10}</span>
-                   <p className="font-medium">{item}</p>
-                </div>
-              ))}
-           </div>
+             <RevealOnScroll direction="scale" duration={0.6}>
+               <div className="inline-flex items-center justify-center p-3 rounded-full bg-accent/10 text-accent mb-6">
+                 <HelpCircle size={32} />
+               </div>
+             </RevealOnScroll>
+             
+             <RevealOnScroll direction="down" delay={0.2}>
+                <h2 className="editorial-title mb-8">Những Bí Ẩn Bỏ Ngỏ.</h2>
+                <p className="editorial-text mx-auto mb-12">
+                  Tại sao bố Thắng lại căm ghét Triết học đến vậy? 
+                  Liệu Xỉu có thực sự là một "dân chơi" hay đang che giấu một quá khứ đen tối? 
+                  Và quan trọng nhất... ai là người điều khiển thực tại này?
+                </p>
+             </RevealOnScroll>
+
+             <div className="grid md:grid-cols-3 gap-6 text-left">
+                {[
+                  "Căn phòng bí mật của Bố.",
+                  "Cuốn nhật ký của Xỉu.",
+                  "Thí nghiệm 'Cái Hang' của Nữ."
+                ].map((item, i) => (
+                  <RevealOnScroll key={i} delay={0.4 + (i * 0.1)} direction="up">
+                    <div className="bg-white p-6 border border-line shadow-sm h-full">
+                       <span className="block font-mono text-xs text-accent mb-2">FILE #{i+10}</span>
+                       <p className="font-medium">{item}</p>
+                    </div>
+                  </RevealOnScroll>
+                ))}
+             </div>
         </section>
 
         {/* CHARACTERS: Personnel Files */}
         <section id="characters" className="section-divide max-w-6xl mx-auto">
-          <h2 className="editorial-title mb-16">Hồ Sơ Nhân Vật.</h2>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                id: "NV-01",
-                name: "Võ Minh Xỉu",
-                role: "The Hedonist (Khoái Lạc)",
-                desc: "Dân chơi, thích cá cược. Quá khứ bí ẩn tại Campuchia. Luôn tin rằng 'Vui là chính'.",
-                icon: <Download size={24} />
-              },
-              {
-                id: "NV-02",
-                name: "Vũ Hải Nữ",
-                role: "The Idealist (Lý Tưởng)",
-                desc: "Hội trưởng CLB. Nghiêm túc, ám ảnh với 'Cái Hang Plato'. Muốn tìm ra Chân lý tuyệt đối.",
-                icon: <BookOpen size={24} />
-              },
-              {
-                id: "NV-03",
-                name: "Đại Tá Hưng",
-                role: "The Authority (Quyền Lực)",
-                desc: "Bố của Thắng. Tin vào Kỷ luật thép. 'Quân đội sẽ dạy mày làm người'.",
-                icon: <User size={24} />
-              }
-            ].map((char, i) => (
-              <div key={i} className="dossier-card group">
-                <div className="flex justify-between items-start mb-6 border-b border-line pb-4">
-                  <span className="font-mono text-xs text-accent">{char.id}</span>
-                  {char.icon}
-                </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{char.name}</h3>
-                <p className="font-mono text-xs uppercase tracking-wider text-ink-light mb-4">{char.role}</p>
-                <p className="text-sm leading-relaxed text-ink-light">
-                  {char.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+        <section id="characters" className="section-divide max-w-6xl mx-auto">
+            <RevealOnScroll direction="up">
+              <h2 className="editorial-title mb-16">Hồ Sơ Nhân Vật.</h2>
+            </RevealOnScroll>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  id: "NV-01",
+                  name: "Võ Minh Xỉu",
+                  role: "The Hedonist (Khoái Lạc)",
+                  desc: "Dân chơi, thích cá cược. Quá khứ bí ẩn tại Campuchia. Luôn tin rằng 'Vui là chính'.",
+                  icon: <Download size={24} />
+                },
+                {
+                  id: "NV-02",
+                  name: "Vũ Hải Nữ",
+                  role: "The Idealist (Lý Tưởng)",
+                  desc: "Hội trưởng CLB. Nghiêm túc, ám ảnh với 'Cái Hang Plato'. Muốn tìm ra Chân lý tuyệt đối.",
+                  icon: <BookOpen size={24} />
+                },
+                {
+                  id: "NV-03",
+                  name: "Đại Tá Hưng",
+                  role: "The Authority (Quyền Lực)",
+                  desc: "Bố của Thắng. Tin vào Kỷ luật thép. 'Quân đội sẽ dạy mày làm người'.",
+                  icon: <User size={24} />
+                }
+              ].map((char, i) => (
+                <RevealOnScroll key={i} delay={i * 0.2} direction="up">
+                  <motion.div 
+                    whileHover={{ y: -5 }} 
+                    className="dossier-card group h-full"
+                  >
+                    <div className="flex justify-between items-start mb-6 border-b border-line pb-4">
+                      <span className="font-mono text-xs text-accent">{char.id}</span>
+                      {char.icon}
+                    </div>
+                    <h3 className="font-serif text-2xl font-bold mb-2 group-hover:text-accent transition-colors">{char.name}</h3>
+                    <p className="font-mono text-xs uppercase tracking-wider text-ink-light mb-4">{char.role}</p>
+                    <p className="text-sm leading-relaxed text-ink-light">
+                      {char.desc}
+                    </p>
+                  </motion.div>
+                </RevealOnScroll>
+              ))}
+            </div>
+        </section>
         </section>
 
         {/* GALLERY PLACEHOLDERS */}
         <section id="gallery" className="section-divide max-w-6xl mx-auto">
-           <h2 className="editorial-title mb-12">Tư Liệu Hình Ảnh.</h2>
-           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-              <div className="md:col-span-2 md:row-span-2 bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                 <ImageIcon size={48} className="mb-2 opacity-20" />
-                 <span className="font-mono text-xs">NO SIGNAL</span>
-              </div>
-              <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                 <span className="font-mono text-xs">IMG_001.JPG</span>
-              </div>
-               <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                 <span className="font-mono text-xs">IMG_002.JPG</span>
-              </div>
-               <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                 <span className="font-mono text-xs">IMG_003.JPG</span>
-              </div>
-               <div className="bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                 <span className="font-mono text-xs">EVIDENCE_A.PNG</span>
-              </div>
-           </div>
+        <section id="gallery" className="section-divide max-w-6xl mx-auto">
+             <RevealOnScroll direction="up">
+                <h2 className="editorial-title mb-12">Tư Liệu Hình Ảnh.</h2>
+             </RevealOnScroll>
+             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                <RevealOnScroll delay={0.1} direction="scale" className="md:col-span-2 md:row-span-2 h-full">
+                  <div className="h-full w-full bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                      <ImageIcon size={48} className="mb-2 opacity-20" />
+                      <span className="font-mono text-xs">NO SIGNAL</span>
+                  </div>
+                </RevealOnScroll>
+                
+                {[
+                  "IMG_001.JPG", "IMG_002.JPG", "IMG_003.JPG", "EVIDENCE_A.PNG"
+                ].map((name, i) => (
+                   <RevealOnScroll key={i} delay={0.2 + (i * 0.1)} direction="scale" className="h-full">
+                      <div className="h-full w-full bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
+                        <span className="font-mono text-xs">{name}</span>
+                      </div>
+                   </RevealOnScroll>
+                ))}
+             </div>
+        </section>
         </section>
 
         {/* TIMELINE: The Path */}
         <section className="section-divide max-w-4xl mx-auto text-center">
-          <h2 className="editorial-title">Lộ Trình Nhận Thức.</h2>
-          <p className="editorial-text mx-auto mb-16">
-            Hành trình từ bóng tối ra ánh sáng (hoặc ngược lại).
-          </p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { 
-                step: "01", 
-                name: "Eikasia", 
-                vi: "Ảo Ảnh",
-                desc: "Kẹt trong 'Cái Hang'. Nhìn đời qua những chiếc bóng và tin đó là sự thật."
-              },
-              { 
-                step: "02", 
-                name: "Pistis", 
-                vi: "Niềm Tin",
-                desc: "Bắt đầu nhận thức được các sự vật hữu hình, nhưng chưa chạm tới bản chất." 
-              },
-              { 
-                step: "03", 
-                name: "Dianoia", 
-                vi: "Suy Luận",
-                desc: "Sử dụng logic và toán học để đặt câu hỏi về thực tại giả dối."
-              },
-              { 
-                step: "04", 
-                name: "Noesis", 
-                vi: "Tri Thức",
-                desc: "Giác ngộ. Thoát khỏi hang động và đối diện với Mặt Trời rực rỡ."
-              }
-            ].map((item, i) => (
-              <div key={i} className="border border-line p-6 hover:border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-300 cursor-default group h-full flex flex-col justify-between bg-white">
-                <div>
-                  <span className="font-mono text-sm opacity-50 block mb-2">{item.step}</span>
-                  <h3 className="font-serif text-xl font-bold">{item.name}</h3>
-                  <p className="text-xs uppercase tracking-widest mt-1 opacity-70 group-hover:text-accent mb-4">{item.vi}</p>
-                </div>
-                <p className="text-sm leading-relaxed opacity-80 border-t border-line/30 pt-4 group-hover:border-black/10">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+        <section className="section-divide max-w-4xl mx-auto text-center">
+            <RevealOnScroll direction="up">
+              <h2 className="editorial-title">Lộ Trình Nhận Thức.</h2>
+              <p className="editorial-text mx-auto mb-16">
+                Hành trình từ bóng tối ra ánh sáng (hoặc ngược lại).
+              </p>
+            </RevealOnScroll>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { 
+                  step: "01", 
+                  name: "Eikasia", 
+                  vi: "Ảo Ảnh",
+                  desc: "Kẹt trong 'Cái Hang'. Nhìn đời qua những chiếc bóng và tin đó là sự thật."
+                },
+                { 
+                  step: "02", 
+                  name: "Pistis", 
+                  vi: "Niềm Tin",
+                  desc: "Bắt đầu nhận thức được các sự vật hữu hình, nhưng chưa chạm tới bản chất." 
+                },
+                { 
+                  step: "03", 
+                  name: "Dianoia", 
+                  vi: "Suy Luận",
+                  desc: "Sử dụng logic và toán học để đặt câu hỏi về thực tại giả dối."
+                },
+                { 
+                  step: "04", 
+                  name: "Noesis", 
+                  vi: "Tri Thức",
+                  desc: "Giác ngộ. Thoát khỏi hang động và đối diện với Mặt Trời rực rỡ."
+                }
+              ].map((item, i) => (
+                <RevealOnScroll key={i} delay={i * 0.15} direction="left">
+                   <div className="border border-line p-6 hover:border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-300 cursor-default group h-full flex flex-col justify-between bg-white">
+                      <div>
+                        <span className="font-mono text-sm opacity-50 block mb-2">{item.step}</span>
+                        <h3 className="font-serif text-xl font-bold">{item.name}</h3>
+                        <p className="text-xs uppercase tracking-widest mt-1 opacity-70 group-hover:text-accent mb-4">{item.vi}</p>
+                      </div>
+                      <p className="text-sm leading-relaxed opacity-80 border-t border-line/30 pt-4 group-hover:border-black/10">
+                        {item.desc}
+                      </p>
+                    </div>
+                </RevealOnScroll>
+              ))}
+            </div>
+        </section>
         </section>
 
         {/* FOOTER */}
-        <footer className="border-t border-line py-12 mt-20 bg-paper">
-          <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="font-serif text-2xl font-bold mb-2">CLB Triết Học Anh Thắng</h3>
-              <p className="text-xs font-mono text-ink-light">© 2026 Kumo Studio. All Rights Reserved.</p>
+        <footer className="border-t border-line bg-paper pt-8 pb-4 mt-12 relative overflow-hidden">
+          {/* Decorative Background */}
+          <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-black/5 rounded-full blur-3xl rounded-bl-full pointer-events-none"></div>
+
+          <div className="max-w-6xl mx-auto px-6 relative z-10">
+            <div className="grid md:grid-cols-4 gap-8 mb-4">
+              {/* Brand Column */}
+              <div className="md:col-span-1">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-6 h-6 relative grayscale opacity-80">
+                    <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
+                  </div>
+                  <h3 className="font-serif font-bold text-lg">CLB Triết Học</h3>
+                </div>
+                <p className="text-xs text-ink-light leading-relaxed mb-4">
+                  Một dự án Visual Novel độc lập về Triết học, Tuổi trẻ và những lựa chọn sai lầm.
+                </p>
+                <div className="flex gap-4 opacity-60">
+                  <a href="#" className="hover:text-accent transition-colors"><div className="w-5 h-5 bg-black/10 rounded-full"></div></a>
+                  <a href="#" className="hover:text-accent transition-colors"><div className="w-5 h-5 bg-black/10 rounded-full"></div></a>
+                  <a href="#" className="hover:text-accent transition-colors"><div className="w-5 h-5 bg-black/10 rounded-full"></div></a>
+                </div>
+              </div>
+
+              {/* Navigation */}
+              <div>
+                <h4 className="font-bold text-sm mb-3 uppercase tracking-wider">Hồ Sơ</h4>
+                <ul className="space-y-1 text-sm text-ink-light">
+                  <li><a href="#dossier" className="hover:text-black transition-colors">Vụ Việc</a></li>
+                  <li><a href="#characters" className="hover:text-black transition-colors">Nhân Vật</a></li>
+                  <li><a href="#mystery" className="hover:text-black transition-colors">Bí Ẩn</a></li>
+                  <li><a href="https://hygef-v4.itch.io/brother-thang-philosophy-club" target="_blank" className="hover:text-black transition-colors">Tải Game</a></li>
+                </ul>
+              </div>
+
+              {/* Contact */}
+              <div>
+                <h4 className="font-bold text-sm mb-3 uppercase tracking-wider">Liên Hệ</h4>
+                <ul className="space-y-1 text-sm text-ink-light">
+                  <li>Đại học FPT Hanoi</li>
+                  <li className="pt-2 text-xs italic opacity-70">"Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói."</li>
+                </ul>
+              </div>
+
+              {/* Newsletter */}
+              <div>
+                 <h4 className="font-bold text-sm mb-3 uppercase tracking-wider">Nhận Tin Mật</h4>
+                 <p className="text-xs text-ink-light mb-2">Nhận thông báo khi có manh mối mới.</p>
+                 <div className="flex border-b border-black py-1">
+                    <input type="email" placeholder="Email của bạn..." className="bg-transparent outline-none w-full text-sm font-mono placeholder:text-black/30 text-black" />
+                    <button className="text-xs font-bold uppercase hover:text-accent transition-colors">Gửi</button>
+                 </div>
+              </div>
             </div>
-            
-            <a 
-              href="https://hygef-v4.itch.io/brother-thang-philosophy-club" 
-              target="_blank"
-              className="flex items-center gap-2 text-sm font-bold border-b border-black pb-1 hover:text-accent hover:border-accent transition-colors"
-            >
-              <Download size={16} />
-              Download on Itch.io
-            </a>
+
+            {/* Bottom Bar */}
+            <div className="border-t border-line/50 pt-3 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-ink-light uppercase">
+              <div className="flex flex-col items-center gap-2">
+                 <div className="w-32 h-32 relative opacity-90">
+                    <Image src="/images/kumo.png" alt="Kumo Studio" fill className="object-contain" />
+                 </div>
+                 <p>© 2026 Kumo Studio. All Rights Reserved.</p>
+              </div>
+              <div className="flex gap-6">
+                <span>Privacy Policy</span>
+                <span>Terms of Service</span>
+              </div>
+            </div>
           </div>
         </footer>
       </main>

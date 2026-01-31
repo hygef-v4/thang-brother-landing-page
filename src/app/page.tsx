@@ -291,14 +291,14 @@ export default function Home() {
                 {
                   id: "NV-02",
                   name: "Võ Minh Xỉu",
-                  role: "The Hedonist (Khoái Lạc)",
+                  role: "The Idealist (Duy tâm)",
                   desc: "Dân chơi, thích cá cược. Quá khứ bí ẩn tại Campuchia. Luôn tin rằng 'Vui là chính'.",
                   icon: <Download size={24} />
                 },
                 {
                   id: "NV-03",
                   name: "Vũ Hải Nữ",
-                  role: "The Idealist (Lý Tưởng)",
+                  role: "The Materialist (Duy vật)",
                   desc: "Hội trưởng CLB. Nghiêm túc, ám ảnh với 'Cái Hang Plato'. Muốn tìm ra Chân lý tuyệt đối.",
                   icon: <BookOpen size={24} />
                 },

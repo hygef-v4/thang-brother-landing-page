@@ -1,98 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import "tailwindcss";
-
 :root {
-  /* Paper & Ink Palette */
-  --paper: #FAFAFA;      /* Near-white / Clean Paper */
-  --paper-dark: rgba(28, 25, 23, 0.05); /* Transparent black (5%) to darken texture */
-  --ink: #1c1917;        /* Soft black */
-  --ink-light: #57534e;  /* Dark gray */
-  --accent: #C62828;     /* Deep Red for danger/alert */
-  --line: #e5e5e5;       /* Subtle border, adjusted for lighter background */
+    /* Paper & Ink Palette */
+    --paper: #FAFAFA;
+    /* Near-white / Clean Paper */
+    --paper-dark: rgba(28, 25, 23, 0.05);
+    /* Transparent black (5%) to darken texture */
+    --ink: #1c1917;
+    /* Soft black */
+    --ink-light: #57534e;
+    /* Dark gray */
+    --accent: #C62828;
+    /* Deep Red for danger/alert */
+    --line: #e5e5e5;
+    /* Subtle border, adjusted for lighter background */
 }
 
+
 /* Tailwind CSS v4 theme configuration */
+
+
 /* stylelint-disable-next-line at-rule-no-unknown */
+
 @theme inline {
-  --color-paper: var(--paper);
-  --color-paper-dark: var(--paper-dark);
-  --color-ink: var(--ink);
-  --color-ink-light: var(--ink-light);
-  --color-accent: var(--accent);
-  --color-line: var(--line);
-  
-  --font-sans: var(--font-inter), 'Inter', sans-serif;
-  --font-serif: var(--font-playfair), 'Playfair Display', serif;
+    --color-paper: var(--paper);
+    --color-paper-dark: var(--paper-dark);
+    --color-ink: var(--ink);
+    --color-ink-light: var(--ink-light);
+    --color-accent: var(--accent);
+    --color-line: var(--line);
+    --font-sans: var(--font-inter), 'Inter', sans-serif;
+    --font-serif: var(--font-playfair), 'Playfair Display', serif;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
+
 /* Custom Scrollbar - Black theme */
+
 html::-webkit-scrollbar {
-  width: 12px !important;
+    width: 12px !important;
 }
 
 html::-webkit-scrollbar-track {
-  background: #FAFAFA !important;
+    background: #FAFAFA !important;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #1c1917 !important;
-  border-radius: 6px !important;
-  border: 2px solid #FAFAFA !important;
+    background: #1c1917 !important;
+    border-radius: 6px !important;
+    border: 2px solid #FAFAFA !important;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: #000000 !important;
+    background: #000000 !important;
 }
 
+
 /* Firefox scrollbar */
+
 html {
-  scrollbar-width: thin !important;
-  scrollbar-color: #1c1917 #FAFAFA !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #1c1917 #FAFAFA !important;
 }
 
 body {
-  background-color: var(--paper);
-  position: relative;
-  color: var(--ink);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: var(--paper);
+    position: relative;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+
 /* Paper Texture Overlay - Safe approach that doesn't affect text */
+
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url('/images/cream-paper.png');
-  opacity: 0.08; /* Low opacity to avoid affecting readability */
-  pointer-events: none;
-  z-index: 0;
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('/images/cream-paper.png');
+    opacity: 0.08;
+    /* Low opacity to avoid affecting readability */
+    pointer-events: none;
+    z-index: 0;
 }
 
 @layer utilities {
-  .font-serif {
-    font-family: var(--font-serif);
-  }
-  
-  /* Dossier / Editorial Utils */
-  .section-divide {
-    @apply border-t border-line py-20;
-  }
-  
-  .editorial-title {
-    @apply font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none mb-6;
-  }
-  
-  .editorial-text {
-    @apply text-lg md:text-xl text-ink-light leading-relaxed max-w-2xl;
-  }
-
-  .dossier-card {
-    @apply border border-line bg-white p-6 transition-all hover:border-black shadow-sm;
-  }
+    .font-serif {
+        font-family: var(--font-serif);
+    }
+    /* Dossier / Editorial Utils */
+    .section-divide {
+        @apply border-t border-line py-20;
+    }
+    .editorial-title {
+        @apply font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none mb-6;
+    }
+    .editorial-text {
+        @apply text-lg md:text-xl text-ink-light leading-relaxed max-w-2xl;
+    }
+    .dossier-card {
+        @apply border border-line bg-white p-6 transition-all hover:border-black shadow-sm;
+    }
 }

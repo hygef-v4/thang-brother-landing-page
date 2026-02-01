@@ -258,14 +258,14 @@ export default function Home() {
               <div className="text-sm font-mono text-ink-light border-t border-black pt-4">
                 <p>FILE: #001-THANG</p>
                 <p>STATUS: NGUY CẤP</p>
-                <p>THỜI HẠN: 15 NGÀY</p>
+                <p>THỜI HẠN: 14 NGÀY</p>
               </div>
               
               <div>
                 <p className="editorial-text mb-8">
                   Bạn là <strong className="text-black">Thắng</strong>. Một tân sinh viên trượt nguyện vọng 1. 
                   Một ông bố Đại tá muốn tống bạn vào quân đội. 
-                  Và <strong className="bg-black text-white px-1">15 ngày</strong> cuối cùng để chứng minh: Triết học có thể cứu rỗi cuộc đời bạn (hoặc phá hủy nó).
+                  Và <strong className="bg-black text-white px-1">14 ngày</strong> cuối cùng để chứng minh: Triết học có thể cứu rỗi cuộc đời bạn (hoặc phá hủy nó).
                 </p>
                 <div className="flex gap-4">
                   <a href="#dossier" className="group flex items-center gap-2 border-b border-black pb-1 hover:text-accent hover:border-accent transition-colors">
@@ -471,7 +471,7 @@ export default function Home() {
         <section className="section-divide bg-paper-dark -mx-4 px-4 md:-mx-6 md:px-6 max-w-none">
           <div className="max-w-4xl mx-auto text-center">
             <RevealOnScroll direction="up">
-              <h2 className="editorial-title mb-8"><ColorfulTitle>15 Ngày Định Mệnh.</ColorfulTitle></h2>
+              <h2 className="editorial-title mb-8"><ColorfulTitle>14 Ngày Định Mệnh.</ColorfulTitle></h2>
               <p className="editorial-text mx-auto mb-16">
                 Hành trình từ bóng tối ra ánh sáng (hoặc ngược lại).
               </p>

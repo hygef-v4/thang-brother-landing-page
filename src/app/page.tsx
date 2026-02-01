@@ -122,7 +122,7 @@ export default function Home() {
     "/images/demo_5.png",
     "/images/demo_2.png",
     "/images/demo_3.png",
-    "/images/demo_4.png",
+    "/images/demo_6.png",
     "/images/demo_1.png"
   ];
 

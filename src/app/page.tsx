@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Brain, Clock, Download, FileText, User, Users, Play, HelpCircle, Image as ImageIcon } from "lucide-react";
+import { ArrowRight, BookOpen, Brain, Download, User, Users, Play, HelpCircle, X, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -118,8 +118,91 @@ const RevealOnScroll = ({
 };
 
 export default function Home() {
+  const galleryImages = [
+    "/images/demo_5.png",
+    "/images/demo_2.png",
+    "/images/demo_3.png",
+    "/images/demo_4.png",
+    "/images/demo_1.png"
+  ];
+
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openLightbox = (src: string) => {
+    const index = galleryImages.indexOf(src);
+    setCurrentImageIndex(index >= 0 ? index : 0);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
+
   return (
     <div className="min-h-screen bg-paper text-ink selection:bg-accent selection:text-white relative z-10">
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={closeLightbox}
+          className="fixed inset-0 bg-black/90 z-100 flex items-center justify-center p-4 cursor-zoom-out"
+        >
+          <button 
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10 z-10"
+          >
+            <X size={32} />
+          </button>
+          
+          {/* Previous Button */}
+          <button 
+            onClick={(e) => { e.stopPropagation(); prevImage(); }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-accent transition-colors p-3 rounded-full hover:bg-white/10 z-10"
+          >
+            <ChevronLeft size={40} />
+          </button>
+          
+          {/* Next Button */}
+          <button 
+            onClick={(e) => { e.stopPropagation(); nextImage(); }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-accent transition-colors p-3 rounded-full hover:bg-white/10 z-10"
+          >
+            <ChevronRight size={40} />
+          </button>
+
+          <motion.div 
+            key={currentImageIndex}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            className="relative max-w-6xl max-h-[90vh] w-full h-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image 
+              src={galleryImages[currentImageIndex]} 
+              alt="Enlarged view" 
+              fill
+              className="object-contain"
+            />
+          </motion.div>
+          
+          {/* Image Counter */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm font-mono bg-black/50 px-4 py-2 rounded-full">
+            {currentImageIndex + 1} / {galleryImages.length}
+          </div>
+        </motion.div>
+      )}
       {/* Header Minimalist */}
       <nav className="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-sm border-b border-line">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -211,7 +294,7 @@ export default function Home() {
                     </li>
                     <li className="flex gap-4 items-start">
                       <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">2</span>
-                      <p>Tham gia CLB Triết Học để "lấy le" nhưng lại bị cuốn vào những cuộc tranh luận sinh tử.</p>
+                      <p>Tham gia CLB Triết Học để &ldquo;lấy le&rdquo; nhưng lại bị cuốn vào những cuộc tranh luận sinh tử.</p>
                     </li>
                     <li className="flex gap-4 items-start">
                       <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">3</span>
@@ -224,7 +307,7 @@ export default function Home() {
               <RevealOnScroll direction="right" delay={0.4}>
                 <div className="relative">
                    {/* Embed Placeholder */}
-                  <div className="aspect-[16/9] bg-gray-100 border border-line flex items-center justify-center relative shadow-lg">
+                  <div className="aspect-video bg-gray-100 border border-line flex items-center justify-center relative shadow-lg">
                       <iframe 
                         src="https://itch.io/embed/4237431?linkback=true&bg_color=fafaf9&fg_color=1c1917&link_color=000000&border_color=e7e5e4" 
                         width="100%" 
@@ -251,7 +334,7 @@ export default function Home() {
               <h2 className="editorial-title mb-8"><ColorfulTitle>Những Bí Ẩn Bỏ Ngỏ.</ColorfulTitle></h2>
                 <p className="editorial-text mx-auto mb-12">
                   Tại sao bố Thắng lại căm ghét Triết học đến vậy? 
-                  Liệu Xỉu có thực sự là một "dân chơi" hay đang che giấu một quá khứ đen tối? 
+                  Liệu Xỉu có thực sự là một &ldquo;dân chơi&rdquo; hay đang che giấu một quá khứ đen tối? 
                   Và quan trọng nhất... ai là người điều khiển thực tại này?
                 </p>
              </RevealOnScroll>
@@ -345,18 +428,39 @@ export default function Home() {
              </RevealOnScroll>
              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
                 <RevealOnScroll delay={0.1} direction="scale" className="md:col-span-2 md:row-span-2 h-full">
-                  <div className="h-full w-full bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                      <ImageIcon size={48} className="mb-2 opacity-20" />
-                      <span className="font-mono text-xs">NO SIGNAL</span>
+                  <div 
+                    onClick={() => openLightbox(galleryImages[0])}
+                    className="relative overflow-hidden group border border-line cursor-zoom-in h-full w-full"
+                  >
+                    <Image 
+                       src={galleryImages[0]} 
+                       alt="Gameplay Demo 5" 
+                       fill 
+                       className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-transparent" />
+                    <div className="absolute bottom-2 left-2 bg-black text-white text-[10px] px-2 py-1 font-mono uppercase opacity-0 group-hover:opacity-100 transition-opacity">
+                      Evidence #001
+                    </div>
                   </div>
                 </RevealOnScroll>
                 
-                {[
-                  "IMG_001.JPG", "IMG_002.JPG", "IMG_003.JPG", "EVIDENCE_A.PNG"
-                ].map((name, i) => (
+                {galleryImages.slice(1).map((src, i) => (
                    <RevealOnScroll key={i} delay={0.2 + (i * 0.1)} direction="scale" className="h-full">
-                      <div className="h-full w-full bg-gray-100 border border-line flex flex-col items-center justify-center text-ink-light">
-                        <span className="font-mono text-xs">{name}</span>
+                      <div 
+                        onClick={() => openLightbox(src)}
+                        className="relative overflow-hidden group border border-line cursor-zoom-in h-full w-full"
+                      >
+                        <Image 
+                          src={src} 
+                          alt={`Gameplay Demo ${i+2}`} 
+                          fill 
+                          className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                        />
+                        <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-transparent" />
+                        <div className="absolute bottom-0 right-0 bg-paper border-t border-l border-line px-2 py-0.5 font-mono text-[10px] text-ink-light">
+                          IMG_{String(i+2).padStart(3, '0')}
+                        </div>
                       </div>
                    </RevealOnScroll>
                 ))}
@@ -444,7 +548,7 @@ export default function Home() {
                   <div className="space-y-1">
                      <h3 className="font-serif font-bold text-base">CLB Triết Học</h3>
                      <p className="text-xs text-ink-light mx-auto max-w-md leading-relaxed">
-                       "Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói."
+                       &ldquo;Triết học không nuôi sống được ai, nhưng nó giúp bạn hiểu tại sao mình chết đói.&rdquo;
                      </p>
                   </div>
 

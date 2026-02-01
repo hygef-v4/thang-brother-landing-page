@@ -298,7 +298,7 @@ export default function Home() {
                     </li>
                     <li className="flex gap-4 items-start">
                       <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full shrink-0">3</span>
-                      <p>Đối mặt với các luồng tư tưởng: Chủ nghĩa Khoái lạc (Xỉu) vs Chủ nghĩa Khắc kỷ (Hải Nữ).</p>
+                      <p>Đối mặt với các luồng tư tưởng: Chủ nghĩa Duy Tâm (Xỉu) vs Chủ nghĩa Duy Vật (Hải Nữ).</p>
                     </li>
                   </ul>
                 </div>

@@ -29,6 +29,31 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar - Black theme */
+html::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+html::-webkit-scrollbar-track {
+  background: #FAFAFA !important;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #1c1917 !important;
+  border-radius: 6px !important;
+  border: 2px solid #FAFAFA !important;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #000000 !important;
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin !important;
+  scrollbar-color: #1c1917 #FAFAFA !important;
+}
+
 body {
   background-color: var(--paper);
   position: relative;

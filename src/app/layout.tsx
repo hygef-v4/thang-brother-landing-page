@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "CLB Triết Học Anh Thắng | Brother Thang's Philosophy Club",
-  description: "Giúp Thắng thoát khỏi áp lực gia đình bằng Triết học trong 15 ngày! Visual Novel đậm chất VN.",
+  description: "Giúp Thắng thoát khỏi áp lực gia đình bằng Triết học trong 14 ngày! Visual Novel đậm chất VN.",
   icons: {
     icon: '/images/kumo.png',
   },

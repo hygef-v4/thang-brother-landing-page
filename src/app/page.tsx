@@ -230,7 +230,7 @@ export default function Home() {
               target="_blank"
               className="hidden sm:flex px-4 py-2 bg-black text-white text-xs font-bold uppercase tracking-wider hover:bg-accent hover:border-accent transition-colors"
             >
-              Tải Demo
+              Tải Game
             </a>
           </div>
         </div>

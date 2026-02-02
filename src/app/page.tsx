@@ -341,8 +341,8 @@ export default function Home() {
 
              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-left">
                 {[
-                  "Căn phòng bí mật của Bố.",
-                  "Cuốn nhật ký của Xỉu.",
+                  "Mệnh Lệnh Số 0 Của Đại Tá",
+                  "Giả Thuyết Về Thế Giới Truman",
                   "Thí nghiệm 'Cái Hang' của Nữ."
                 ].map((item, i) => (
                   <RevealOnScroll key={i} delay={0.4 + (i * 0.1)} direction="up">
